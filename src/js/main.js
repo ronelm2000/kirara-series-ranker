@@ -765,9 +765,18 @@ function decodeQuery(queryString = window.location.search.slice(1)) {
 function preloadImages() {
   const totalLength = characterDataToSort.length;
   let imagesLoaded = 0;
+  
+  let timeoutMS = 10000;
+
+  let timeoutPromise = new Promise((resolve, reject) => {
+    let id = setTimeout(() => {
+      clearTimeout(id);
+      resolve('Timed out in '+ timeoutMS + 'ms; moving on.');
+    }, timeoutMS)
+  });
 
   const loadImage = (src, idx) => {
-      return new Promise((resolve, reject) => {
+      let actualPromise = new Promise((resolve, reject) => {
           const img = new Image();
 
           img.crossOrigin = 'Anonymous';
@@ -781,6 +790,7 @@ function preloadImages() {
           }
           img.src = src;
       });
+      return Promise.race([actualPromise, timeoutPromise]);
   };
 
   const setImageToData = (img, idx) => {

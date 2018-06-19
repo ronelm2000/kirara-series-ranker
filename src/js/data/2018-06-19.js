@@ -28,6 +28,7 @@ dataSet[dataSetVersion].options = [
       { name: "Anne Happy", tooltip: "the kirara that describes you", key: "anhapi" },
       { name: "Harukana Recieve", tooltip: "haikyu, but fappable and always beach episode", key: "haruka" },
       { name: "K-ON!", tooltip: "KyoAni cashcow about cute girls not trying to do band things", key: "kon"},
+      { name: "Koufuku Grafitti", tooltip: "Souma's grandma", key: "foodgasm"},
       { name: "Gochuumon Usagi desu ka?", tooltip: "civil war: cawfee VS gween tea", key: "rabbits" }
     ]
   },
@@ -57,7 +58,7 @@ dataSet[dataSetVersion].options = [
 dataSet[dataSetVersion].characterData = [
   {
     name: "Yuno",
-    img: "https://kirafan.bangbang93.com/static/assets/texture/charauiresource/characard/characard_10002001.org.jpeg",
+    img: "https://i.imgur.com/5l2Ekoc.jpg",
     opts: {
       series: [ "wide" ],
       when: ["in"]
@@ -65,7 +66,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Miyako",
-    img: "https://kirafan.bangbang93.com/static/assets/texture/charauiresource/characard/characard_10011001.org.jpeg",
+    img: "https://i.imgur.com/cNbZ8Gg.jpg",
     opts: {
       series: [ "wide" ],
       when: ["in"]
@@ -73,7 +74,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Hiro",
-    img: "https://kirafan.bangbang93.com/static/assets/texture/charauiresource/characard/characard_10021001.org.jpeg",
+    img: "https://i.imgur.com/WHJzb50.jpg",
     opts: {
       series: ["wide"],
       when: ["in"]
@@ -81,7 +82,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Sae",
-    img: "https://kirafan.bangbang93.com/static/assets/texture/charauiresource/characard/characard_10031001.org.jpeg",
+    img: "https://i.imgur.com/TUVJgMh.jpg",
     opts: {
       series: ["wide"],
       when: ["in"]
@@ -89,7 +90,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Nori",
-    img: "https://kirafan.bangbang93.com/static/assets/texture/charauiresource/characard/characard_10041001.org.jpeg",
+    img: "https://i.imgur.com/F0ToNFe.jpg",
     opts: {
       series: ["wide"],
       when: ["in"]
@@ -97,7 +98,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Nazuna",
-    img: "https://kirafan.bangbang93.com/static/assets/texture/charauiresource/characard/characard_10051001.org.jpeg",
+    img: "https://i.imgur.com/chPqUyM.jpg",
     opts: {
       series: ["wide"],
       when: ["in"]
@@ -105,7 +106,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Matsuri",
-    img: "http://static.tvtropes.org/pmwiki/pub/images/sm_hidamatsuri_9036.jpg",
+    img: "https://i.imgur.com/sbKhIbT.jpg",
     opts: {
       series: ["wide"],
       when: ["never"]
@@ -116,7 +117,7 @@ dataSet[dataSetVersion].characterData = [
 
   {
     name: "Yuzuko Nonohara",
-    img: "https://kirafan.bangbang93.com/static/assets/texture/charauiresource/characard/characard_11002001.org.jpeg",
+    img: "https://i.imgur.com/L0NW5TO.jpg",
     opts: {
       series: ["yys"],
       when: ["in"]
@@ -124,7 +125,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Yui Ichii",
-    img: "https://kirafan.bangbang93.com/static/assets/texture/charauiresource/characard/characard_11012000.org.jpeg",
+    img: "https://i.imgur.com/cgAG4bf.jpg",
     opts: {
       series: ["yys"],
       when: ["in"]
@@ -132,7 +133,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Yukari Hinata",
-    img: "https://kirafan.bangbang93.com/static/assets/texture/charauiresource/characard/characard_11021001.org.jpeg",
+    img: "https://i.imgur.com/qaIc7uo.jpg",
     opts: {
       series: ["yys"],
       when: ["in"]
@@ -140,7 +141,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Yoriko Matsumoto",
-    img: "https://kirafan.bangbang93.com/static/assets/texture/charauiresource/characard/characard_11032001.org.jpeg",
+    img: "https://i.imgur.com/GP5t5Eb.jpg",
     opts: {
       series: ["yys"],
       when: ["in"]
@@ -148,7 +149,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Chiho Aikawa",
-    img: "https://kirafan.bangbang93.com/static/assets/texture/charauiresource/characard/characard_11041001.org.jpeg",
+    img: "https://i.imgur.com/JcVdm7T.jpg",
     opts: {
       series: ["yys"],
       when: ["in"]
@@ -156,7 +157,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Fumi Hasegawa",
-    img: "https://kirafan.bangbang93.com/static/assets/texture/charauiresource/characard/characard_11061001.org.jpeg",
+    img: "https://i.imgur.com/CKkoeBm.jpg",
     opts: {
       series: ["yys"],
       when: ["in"]
@@ -175,7 +176,7 @@ dataSet[dataSetVersion].characterData = [
 
   {
     name: "Yuki Takeya",
-    img: "https://kirafan.bangbang93.com/static/assets/texture/charauiresource/characard/characard_12002001.org.jpeg",
+    img: "https://i.imgur.com/92TcgbJ.jpg",
     opts: {
       series: ["gg"],
       when: ["in"]
@@ -183,7 +184,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Kurumi Ebisuzawa",
-    img: "https://kirafan.bangbang93.com/static/assets/texture/charauiresource/characard/characard_12011001.org.jpeg",
+    img: "https://i.imgur.com/5kTdgCk.jpg",
     opts: {
       series: ["gg"],
       when: ["in"]
@@ -191,9 +192,51 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Yuri Wakasa",
-    img: "https://kirafan.bangbang93.com/static/assets/texture/charauiresource/characard/characard_12021001.org.jpeg",
+    img: "https://i.imgur.com/d7Snyy2.jpg",
     opts: {
       series: ["gg"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Miki Naoki",
+    img: "https://i.imgur.com/djD9QzI.jpg",
+    opts: {
+      series: ["gg"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Megumi Sakura",
+    img: "https://i.imgur.com/iPOUVOX.jpg",
+    opts: {
+      series: ["gg"],
+      when: ["in"]
+    }
+  },
+
+
+  {
+    name: "Aoba Suzukaze",
+    img: "https://i.imgur.com/p8rY4Ig.jpg",
+    opts: {
+      series: ["ng"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Hifumi Takimoto",
+    img: "https://i.imgur.com/5dOhBCb.jpg",
+    opts: {
+      series: ["ng"],
+      when:["in"]
+    }
+  },
+  {
+    name: "Hajime Shinoda",
+    img: "https://i.imgur.com/3ieZMGf.jpg",
+    opts: {
+      series: ["ng"],
       when: ["in"]
     }
   }
