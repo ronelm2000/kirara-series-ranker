@@ -29,6 +29,7 @@ dataSet[dataSetVersion].options = [
       { name: "Harukana Recieve", tooltip: "haikyu, but fappable and always beach episode", key: "haruka" },
       { name: "K-ON!", tooltip: "KyoAni cashcow about cute girls not trying to do band things", key: "kon"},
       { name: "Koufuku Grafitti", tooltip: "Souma's grandma", key: "foodgasm"},
+      { name: "Acchi Kocchi", tooltip: "This animu gave me diabetes", key: "acchi"},
       { name: "Gochuumon Usagi desu ka?", tooltip: "civil war: cawfee VS gween tea", key: "rabbits" }
     ]
   },
@@ -44,13 +45,15 @@ dataSet[dataSetVersion].options = [
     ]
   },
   {
-    name: "Remove Traps",
-    key: "notgirl",
+    name: "No Traps",
+    key: "trap",
+    checked: false,
     tooltip: "Check this to remove Hideri (and others?), because (s)he's ranked ??? in your heart."
   },
   {
-    name: "Remove Manga-Only",
-    key: "notmanga",
+    name: "No non-Anime charas",
+    key: "nonanimu",
+    checked: true,
     tooltip: "Check this to remove Omi, you heartless bastard."
   }
 ];
@@ -105,11 +108,20 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
+    name: "Yoshinoya",
+    img: "https://i.imgur.com/HQ585oP.png",
+    opts: {
+      series: ["wide"],
+      when: ["never"]
+    }
+  },
+  {
     name: "Matsuri",
     img: "https://i.imgur.com/sbKhIbT.jpg",
     opts: {
       series: ["wide"],
-      when: ["never"]
+      when: ["never"],
+      nonanimu: true
     }
   },
 
@@ -191,14 +203,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Yuri Wakasa",
-    img: "https://i.imgur.com/d7Snyy2.jpg",
-    opts: {
-      series: ["gg"],
-      when: ["in"]
-    }
-  },
-  {
     name: "Miki Naoki",
     img: "https://i.imgur.com/djD9QzI.jpg",
     opts: {
@@ -212,6 +216,59 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["gg"],
       when: ["in"]
+    }
+  },
+  {
+    name: "Yuri Wakasa",
+    img: "https://i.imgur.com/d7Snyy2.jpg",
+    opts: {
+      series: ["gg"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Ruu Wakasa",
+    img: "https://i.imgur.com/4ZosD4E.png",
+    opts: {
+      series: ["gg"],
+      when: ["never"],
+      nonanimu: true
+    }
+  },
+  {
+    name: "Hikako Kirai",
+    img: "https://i.imgur.com/EmHBMc5.png",
+    opts: {
+      series: ["gg"],
+      when: ["never"],
+      nonanimu: true
+    }
+  },
+  {
+    name: "Touko Deguchi",
+    img: "https://i.imgur.com/5zeW3XR.jpg",
+    opts: {
+      series: ["gg"],
+      when: ["never"],
+      nonanimu: true
+    }
+  },
+  {
+    name: "Aki Hikarizato",
+    img: "https://i.imgur.com/EKUaV08.jpg",
+    opts: {
+      series: ["gg"],
+      when: ["never"],
+      nonanimu: true
+    }
+  },
+  {
+    name: "Aosoi Shiiko",
+    img: "https://i.imgur.com/jzhiF2o.jpg?2",
+    opts: {
+      series: ["gg"],
+      when: ["never"],
+      nonanimu: true
     }
   },
 

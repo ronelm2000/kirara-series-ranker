@@ -766,7 +766,7 @@ function preloadImages() {
   const totalLength = characterDataToSort.length;
   let imagesLoaded = 0;
   
-  let timeoutMS = 10000;
+  let timeoutMS = 30000;
 
   let timeoutPromise = new Promise((resolve, reject) => {
     let id = setTimeout(() => {
