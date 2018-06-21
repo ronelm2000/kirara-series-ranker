@@ -296,5 +296,29 @@ dataSet[dataSetVersion].characterData = [
       series: ["ng"],
       when: ["in"]
     }
+  },
+  {
+    name: "Yun Iijima",
+    img: "https://i.imgur.com/BakGJt0.jpg",
+    opts: {
+      series: ["ng"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Kou Yagami",
+    img: "https://i.imgur.com/MfBHah2.jpg",
+    opts: {
+      series: ["ng"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Rin Tooyama",
+    img: "https://i.imgur.com/0vJEsV6.jpg",
+    opts: {
+      series: ["ng"],
+      when: ["in"]
+    }
   }
 ];
