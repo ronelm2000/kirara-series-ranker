@@ -1,13 +1,13 @@
 <html>
 
 <head>
-  <link rel="shortcut icon" href="src/assets/yinyang.ico" type="image/x-icon">
-  <link rel="icon" href="src/assets/yinyang.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="src/assets/index_logo.ico" type="image/x-icon">
+  <link rel="icon" href="src/assets/index_logo.ico" type="image/x-icon">
   <meta charset="utf-8">
-  <meta name="og:site_name" content="Touhou Character Sorting">
-  <meta name="og:description" content="A simple website for sorting Touhou characters in a formatted list.">
-  <meta name="og:image" content="https://i.imgur.com/IZzJMk6.jpg">
-  <title>Touhou Character Sorting</title>
+  <meta name="og:site_name" content="Kirara Ranker">
+  <meta name="og:description" content="An extremely simplistic way to have crippling depression as you choose between characters in what seems to be Marvel, but CGDCT.">
+  <meta name="og:image" content="https://cdn.discordapp.com/attachments/389799029703311360/459520053134622720/discord_logo.png">
+  <title>Kiraranker</title>
 
   <link rel="stylesheet" type="text/css" href="src/css/reset.css">
   <link rel="stylesheet" type="text/css" href="src/css/styles.css">
@@ -23,6 +23,12 @@
 
 <body>
 <div class="container">
+    <div class="tip-modal">
+        <div class="tip-content">
+            <p>Sample Text Here</p>
+            <div class="button">Close Tip</div>
+        </div>
+    </div>
 
     <div class="progress">
         <span class="progressbattle"></span>
@@ -32,9 +38,11 @@
     </div>
 
     <div class="sorter">
+        <div class="left sort padded-image">
         <img src="src/assets/defaultL.jpg" class="left sort image">
+        </div>
 
-        <div class="starting start button">Touhou Project Character Sorter<br><br>Click to Start!</div>
+        <div class="starting start button">Kirara Fantasia Character Ranker<br><br>Click to Start!</div>
         <div class="starting load button">Load <span></span></div>
 
         <div class="loading button"><div></div><span>Loading...</span></div>
@@ -46,9 +54,11 @@
         <div class="finished save button">Generate Result URL</div>
         <div class="finished getimg button">Generate Image</div>
         <div class="finished list button">Generate Text List</div>
-
+        
+        <div class="right sort padded-image">
         <img src="src/assets/defaultR.jpg" class="right sort image">
-
+        </div>
+        
         <div class="left sort text"><p></p></div>
         <div class="right sort text"><p></p></div>
     </div>
@@ -59,14 +69,18 @@
     <div class="results"></div>
 
     <div class="info">
-        <a href="https://relick.me/song/">Song Sorter</a> | <a href="mailto:fera@imouto.my">Contact</a> | <a href="https://github.com/execfera/charasort/">Source Code</a> | <a href="?IwVmE4CZNAGSBs5YB8QA5zAMzoCwqzCxEmnDGVkkUXVHEON1lW0tPOn1s9suNyTGr3Y0G3QcN4SBQunNaCxC+pPLsuqreNob5MylKOtuk5RoWGlenhM63TInfyNSRS-aKuaDV+7bKjrJ8wbpClhyu1BZ6bnKG8R5m5kHOHly6gariITE2vvyRxpocZtqW8moxpZ7GGbmlmbGilZXe6j75CSGtLnbAhAxAA">Best Taste</a> | <a class="clearsave">Clear Save Data</a>
+        <a href="https://discord.gg/gCrAsDR">Discord</a> | <a href="https://github.com/ronelm2000/kiraranker/">Source Code</a> | <a href="https://github.com/execfera/charasort/">Original</a> | My Ranking (WIP) | <a class="clearsave">Clear Save Data</a>
+        <br />
+        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=69342412">Sauce #1</a> | <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=67697620">Sauce #2</a>
+
         
         <br><br>
 
-        <p>Sorter for Touhou characters. Pick your sources, and hit the Start button.</p>
+        <p>A shameless fork sorter specifically designed for most (if not all) Manga Time Kirara characters.</p>
         <p><strong>Certain options have details that you can hover to read.</strong></p>
         <p>Click on the character you like better from the two, or tie them if you like them equally or don't know them.</p>
-        <p>Depending on how many sources you pick, you'll get up to 700+ picks, so set aside a good few cups of tea for this.</p>
+        <p>Unless you picked Agony Mode (WIP), in which case, you can't tie them.</p>
+        <p>Depending on how many sources you pick (especially under default settings), you'll get up to 700+ picks, so set aside a good few cups of tea and possibly your revolver for this.</p>
 
         <br><br>
 
@@ -80,9 +94,7 @@
 
         <br><br>
 
-        <p>February 21st, 2018 - Refactored site. Autosave, shareable URLs, keyboard controls. Unfortunately, this update breaks support for older mobile Safari users. Get a better device or use a desktop.</p>
-        <p>January 7th, 2018 - Added Antinomy of Common Flowers characters.</p>
-        <p>August 11th, 2017 - Added Hidden Star in Four Seasons full version characters.</p>
+        <p>June 22, 2018 - Edited index.html; WIP lots of things as there's way too many charas in Kirara</p>
     </div>
 </div>
 </body>

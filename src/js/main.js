@@ -17,6 +17,7 @@ let choices   = '';       // savedata[2]      (String of '0', '1' and '2' that r
 let optStr    = '';       // savedata[3]      (String of '0' and '1' that denotes top-level option selection)
 let suboptStr = '';       // savedata[4...n]  (String of '0' and '1' that denotes nested option selection, separated by '|')
 let timeError = false;    // Shifts entire savedata array to the right by 1 and adds an empty element at savedata[0] if true.
+let agonyMode = true;     // Enables Agony Mode. This changes the function of 'Tie' into 'Coin Flip' and 'Undo' into 'Redo All'
 
 /** Intermediate sorter data. */
 let sortedIndexList = [];
@@ -53,6 +54,13 @@ let totalBattles    = 0;
 let sorterURL       = window.location.host + window.location.pathname;
 let storedSaveType  = localStorage.getItem(`${sorterURL}_saveType`);
 
+let tipContent      = null;
+let tipModal        = null;
+let tipCloseButton  = null;
+
+let agonyTooltip    = "If this is enabled, you are a true masochist."; 
+
+
 /** Initialize script. */
 function init() {
 
@@ -64,7 +72,7 @@ function init() {
   document.querySelector('.right.sort.image').addEventListener('click', () => pick('right'));
   
   document.querySelector('.sorting.tie.button').addEventListener('click', () => pick('tie'));
-  document.querySelector('.sorting.undo.button').addEventListener('click', undo);
+  document.querySelector('.sorting.undo.button').addEventListener('click', () =>{ if (agonyMode) displayTips(); else undo(); });
   document.querySelector('.sorting.save.button').addEventListener('click', () => saveProgress('Progress'));
   
   document.querySelector('.finished.save.button').addEventListener('click', () => saveProgress('Last Result'));
@@ -72,6 +80,13 @@ function init() {
   document.querySelector('.finished.list.button').addEventListener('click', generateTextList);
 
   document.querySelector('.clearsave').addEventListener('click', clearProgress);
+
+  /** Define Tips */
+  tipContent     = document.querySelector('.tip-content');
+  tipModal       = document.querySelector('.tip-modal');
+  tipCloseButton = document.querySelector('.tip-content > .button');
+  
+  tipCloseButton.addEventListener('click', hideTips);
 
   /** Define keyboard controls (up/down/left/right vimlike k/j/h/l). */
   document.addEventListener('keypress', (ev) => {
@@ -81,8 +96,8 @@ function init() {
         case 's': case '3':                   saveProgress('Progress'); break;
         case 'h': case 'ArrowLeft':           pick('left'); break;
         case 'l': case 'ArrowRight':          pick('right'); break;
-        case 'k': case '1': case 'ArrowUp':   pick('tie'); break;
-        case 'j': case '2': case 'ArrowDown': undo(); break;
+        case 'k': case '1': case 'ArrowUp':   if (agonyMode) pick('tie'); else pick('coinflip'); break;
+        case 'j': case '2': case 'ArrowDown': if (agonyMode) displayTips(); else undo(); break;
         default: break;
       }
     }
@@ -311,7 +326,7 @@ function display() {
 /**
  * Sort between two character choices or tie.
  * 
- * @param {'left'|'right'|'tie'} sortType
+ * @param {'left'|'right'|'tie'|'coinflip'} sortType
  */
 function pick(sortType) {
   if ((timeTaken && choices.length === battleNo - 1) || loading) { return; }
@@ -330,6 +345,16 @@ function pick(sortType) {
   sortedNoPrev        = sortedNo;
   pointerPrev         = pointer;
 
+  /**
+   * For picking 'coinflip'
+   * 
+   * Flip a coin on the RNG.
+   * You do not display who wins; just move on.
+   * 
+   */
+  if (sortType == 'coinflip')
+    sortType = (Math.random() % 2 == 0) ? 'left' : 'right';
+  
   /** 
    * For picking 'left' or 'right':
    * 
@@ -523,6 +548,23 @@ function result(imageNum = 3) {
   });
 }
 
+/** 
+ * TODOLIST
+ * Displays a Tip Screen for choosing between two waifus.
+ * Encourages people to take their time choosing.
+ */
+function displayTips() {
+
+}
+
+/**
+ * TODOLIST
+ * Hides the Tip Screen.
+ */
+function hideTips() {
+
+}
+
 /** Undo previous choice. */
 function undo() {
   if (timeTaken) { return; }
@@ -648,8 +690,8 @@ function setLatestDataset() {
 /** Populate option list. */
 function populateOptions() {
   const optList = document.querySelector('.options');
-  const optInsert = (name, id, tooltip, checked = true, disabled = false) => {
-    return `<div><label title="${tooltip?tooltip:name}"><input id="cb-${id}" type="checkbox" ${checked?'checked':''} ${disabled?'disabled':''}> ${name}</label></div>`;
+  const optInsert = (name, key, id, tooltip, checked = true, disabled = false, subkey = null) => {
+    return `<div><label title="${tooltip?tooltip:name}"><input id="cb-${id}" type="checkbox" ${checked?'checked':''} ${disabled?'disabled':''}> ${name} (${characterData.filter(x => (subkey?x.opts[key]:[]).includes(subkey) || (subkey == null && x.opts.hasOwnProperty(key))).length})</label></div>`;
   };
   const optInsertLarge = (name, id, tooltip, checked = true) => {
     return `<div class="large option"><label title="${tooltip?tooltip:name}"><input id="cbgroup-${id}" type="checkbox" ${checked?'checked':''}> ${name}</label></div>`;
@@ -663,7 +705,7 @@ function populateOptions() {
     if ('sub' in opt) {
       optList.insertAdjacentHTML('beforeend', optInsertLarge(opt.name, opt.key, opt.tooltip, opt.checked));
       opt.sub.forEach((subopt, subindex) => {
-        optList.insertAdjacentHTML('beforeend', optInsert(subopt.name, `${opt.key}-${subindex}`, subopt.tooltip, subopt.checked, opt.checked === false));
+        optList.insertAdjacentHTML('beforeend', optInsert(subopt.name, opt.key, `${opt.key}-${subindex}`, subopt.tooltip, subopt.checked, opt.checked === false, subopt.key));
       });
       optList.insertAdjacentHTML('beforeend', '<hr>');
 
@@ -676,8 +718,16 @@ function populateOptions() {
         });
       });
     } else {
-      optList.insertAdjacentHTML('beforeend', optInsert(opt.name, opt.key, opt.tooltip, opt.checked));
+      optList.insertAdjacentHTML('beforeend', optInsert(opt.name, opt.key, opt.key, opt.tooltip, opt.checked));
     }
+  });
+
+  /** Insert one checkbox to enable Agony Mode */
+  optList.insertAdjacentHTML('beforeend', `<hr /><div class="large option"><label title="${agonyTooltip}"><input id="cb-agony-mode" type="checkbox" ${agonyMode?'checked':''}>Enable Agony Mode</label></div>`);
+  const agonyCheckbox = document.getElementById('cb-agony-mode');
+  agonyCheckbox.parentElement.addEventListener('click', () => {
+    agonyMode = !agonyMode;
+    agonyCheckbox.checked = agonyMode;
   });
 }
 

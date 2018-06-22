@@ -3,11 +3,34 @@ body {
   font-size: 16px;
 }
 
+.tip-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.tip-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
 .container {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   margin-top: 1em;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 225, 253));
 }
 
 .progress {
@@ -116,19 +139,42 @@ body {
   }
 }
 
-.sorter > .image {
+.sorter > .padded-image {
   width: 100%;
   max-width: 350px;
-  /*
-  width: 120px;
-  height: 180px;
-  */
-  margin: auto;
+  overflow: hidden;
   grid-row: 1 / 7;
-  object-fit: contain; /* Do not scale the image */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  
+  object-fit: cover; /* Do not scale the image was contain */
   object-position: center; /* Center the image within the element */
   cursor: pointer;
 }
+
+/*
+.sorter > .padded-image > img {
+  position: relative;
+  left: 100%;
+  margin-left: -200%;
+}
+*/
+
+.sorter > .padded-image > .image {
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  grid-row: 1 / 7;
+  object-fit: contain; /* Do not scale the image was contain */
+  object-position: center; /* Center the image within the element */
+  cursor: pointer;
+}
+
 
 .sorter > .text {
   width: 100%;
