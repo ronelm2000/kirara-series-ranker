@@ -271,6 +271,14 @@ dataSet[dataSetVersion].characterData = [
       nonanimu: true
     }
   },
+  {
+    name: "Kei Shidou",
+    img: "https://i.imgur.com/IhlBqzf.jpg?1",
+    opts: {
+      series: ["gg"],
+      when: ["never"]
+    }
+  },
 
 
   {
@@ -312,6 +320,113 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/ebsBgzG.jpg",
     opts: {
       series: ["achan"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Yuuko",
+    img: "https://i.imgur.com/sek4Gtu.jpg",
+    opts: {
+      series: ["achan"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Nagi",
+    img: "https://i.imgur.com/L139c9B.jpg",
+    opts: {
+      series: ["achan"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Miho",
+    img: "https://i.imgur.com/QddPCdv.jpg",
+    opts: {
+      series: ["achan"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Yutaka",
+    img: "https://i.imgur.com/gu8tZD0.png?1",
+    opts: {
+      series: ["achan"],
+      when: ["never"]
+    }
+  },
+
+
+
+  {
+    name: "Karen Kujou",
+    img: "https://i.imgur.com/5URXuui.jpg",
+    opts: {
+      series: ["km"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Alice Cartelet",
+    img: "https://i.imgur.com/o6bSQh9.jpg",
+    opts: {
+      series: ["km"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Shinobu Oomiya",
+    img: "https://i.imgur.com/azmRVtf.jpg",
+    opts: {
+      series: ["km"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Aya Komichi",
+    img: "https://i.imgur.com/PJxlbjW.jpg",
+    opts: {
+      series: ["km"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Youko Inokuma",
+    img: "https://i.imgur.com/axxZUpr.jpg",
+    opts: {
+      series: ["km"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Honoka Matsubara",
+    img: "https://i.imgur.com/2gCfVEJ.jpg",
+    opts: {
+      series: ["km"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Isami Oomiya",
+    img: "https://i.imgur.com/RxESoYN.jpg",
+    opts: {
+      series: ["km"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Sakura Karasuma",
+    img: "https://i.imgur.com/a2UrZ8S.jpg",
+    opts: {
+      series: ["km"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Akari Kuzehashi",
+    img: "https://i.imgur.com/QyeV3qt.jpg",
+    opts: {
+      series: ["km"],
       when: ["in"]
     }
   }
