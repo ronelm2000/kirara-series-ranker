@@ -296,5 +296,23 @@ dataSet[dataSetVersion].characterData = [
       series: ["ng"],
       when: ["in"]
     }
+  },
+
+
+  {
+    name: "Tooru",
+    img: "https://i.imgur.com/lWooYNy.jpg",
+    opts: {
+      series: ["achan"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Run",
+    img: "https://i.imgur.com/ebsBgzG.jpg",
+    opts: {
+      series: ["achan"],
+      when: ["in"]
+    }
   }
 ];
