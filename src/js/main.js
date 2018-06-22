@@ -151,6 +151,14 @@ function init() {
 
 /** Begin sorting. */
 function start() {
+  /** If Agony Mode is enabled, appropriately rename the icons */
+  if (agonyMode) {
+    document.querySelector('.sorting.tie.button').innerHTML = 'Flip a Coin';
+    document.querySelector('.sorting.undo.button').innerHTML = `Can't Choose! <img class="emote" src="https://cdn.discordapp.com/emojis/430164560888987648.png" />`;
+  } else {
+    document.querySelector('.sorting.tie.button').innerHTML = 'Tie';
+    document.querySelector('.sorting.undo.button').innerHTML = 'Undo';
+  }
   /** Copy data into sorting array to filter. */
   characterDataToSort = characterData.slice(0);
 
