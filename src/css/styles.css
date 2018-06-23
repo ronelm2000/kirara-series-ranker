@@ -1,6 +1,9 @@
 body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-size: 4vmin;/* font-size: 16px; */
+  font-size: 3.125vmin;/* font-size: 16px; */
+  text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
 }
 
 .tip-modal {
@@ -26,8 +29,8 @@ body {
 }
 
 .emote {
-  width: 2.5vw;
-  height: 2.5vw;
+  width: 1.5em;
+  height: 1.5em;
   object-fit: cover;
   transform: translate(0%, 25%);
 }
@@ -200,7 +203,7 @@ body {
   margin: 0.5em 5px 0px;
   width: 100%;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 1.5em;
 }
 
@@ -219,13 +222,14 @@ body {
   display: grid;
   text-align: left;
   grid-template-columns: repeat(3, 4fr);
-  grid-gap: 1vmin;
+  grid-gap: 2.125vmin;
   width: 100%;
   max-width: 80vh; /*old 450px*/
 }
 
 .options > div {
-  font-size: 2.25vmin; /*Chrome somehow ignores 0.5625em; */
+  font-size: 1.325vh; /*Chrome somehow ignores 0.5625em; */
+  letter-spacing: -0.025vmin;
 }
 
 label {
