@@ -15,9 +15,10 @@ let timestamp = 0;        // savedata[0]      (Unix time when sorter was started
 let timeTaken = 0;        // savedata[1]      (Number of ms elapsed when sorter ends, used as end-of-sort flag and in filename generation)
 let choices   = '';       // savedata[2]      (String of '0', '1' and '2' that records what sorter choices are made)
 let optStr    = '';       // savedata[3]      (String of '0' and '1' that denotes top-level option selection)
-let suboptStr = '';       // savedata[4...n]  (String of '0' and '1' that denotes nested option selection, separated by '|')
+let agonyMode = true;     // savedata[4]      (Enables Agony Mode. This changes the function of 'Tie' into 'Coin Flip' and 'Undo' into 'Redo All')
+let coinFlips = 0;        // savedata[5]      (Only applicable in Agony Mode. Counts the number of coin flips that you did.)         
+let suboptStr = '';       // savedata[6...n]  (String of '0' and '1' that denotes nested option selection, separated by '|')
 let timeError = false;    // Shifts entire savedata array to the right by 1 and adds an empty element at savedata[0] if true.
-let agonyMode = true;     // Enables Agony Mode. This changes the function of 'Tie' into 'Coin Flip' and 'Undo' into 'Redo All'
 
 /** Intermediate sorter data. */
 let sortedIndexList = [];
@@ -360,9 +361,11 @@ function pick(sortType) {
    * You do not display who wins; just move on.
    * 
    */
-  if (sortType == 'coinflip')
+  if (sortType == 'coinflip') {
+    coinFlips++;
     sortType = (Math.random() % 2 == 0) ? 'left' : 'right';
-  
+  }
+
   /** 
    * For picking 'left' or 'right':
    * 
@@ -512,7 +515,9 @@ function result(imageNum = 3) {
   document.querySelector('.info').style.display = 'none';
 
   const header = '<div class="result head"><div class="left">Order</div><div class="right">Name</div></div>';
-  const timeStr = `This sorter was completed on ${new Date(timestamp + timeTaken).toString()} and took ${msToReadableTime(timeTaken)}. <a href="${location.protocol}//${sorterURL}">Do another sorter?</a>`;
+  const timeStr = `This sorter was completed on ${new Date(timestamp + timeTaken).toString()} and took ${msToReadableTime(timeTaken)}. <br />` +
+                  ((agonyMode) ? `Agony Mode was enabled. The one who ranked this list did ${coinFlips} coin flips.<br />` : ``) +
+                  `<a href="${location.protocol}//${sorterURL}">Do another sorter?</a>`;
   const imgRes = (char, num) => {
     const charName = reduceTextWidth(char.name, 'Arial 12px', 160);
     const charTooltip = char.name !== charName ? char.name : '';
@@ -671,7 +676,7 @@ function generateTextList() {
 }
 
 function generateSavedata() {
-  const saveData = `${timeError?'|':''}${timestamp}|${timeTaken}|${choices}|${optStr}${suboptStr}`;
+  const saveData = `${timeError?'|':''}${timestamp}|${timeTaken}|${choices}|${agonyMode?'a':'b'}|${coinFlips}|${optStr}${suboptStr}`;
   return LZString.compressToEncodedURIComponent(saveData);
 }
 
@@ -760,6 +765,11 @@ function decodeQuery(queryString = window.location.search.slice(1)) {
     timestamp = Number(decoded.splice(0, 1)[0]);
     timeTaken = Number(decoded.splice(0, 1)[0]);
     choices   = decoded.splice(0, 1)[0];
+
+    const agonyString = decoded.splice(0, 1)[0];
+    if (agonyString != 'a') agonyMode = false;
+
+    coinFlips = Number(decoded.splice(0, 1)[0]);
 
     const optDecoded    = decoded.splice(0, 1)[0];
     const suboptDecoded = decoded.slice(0);
