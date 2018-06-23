@@ -71,7 +71,7 @@ function init() {
   document.querySelector('.left.sort.image').addEventListener('click', () => pick('left'));
   document.querySelector('.right.sort.image').addEventListener('click', () => pick('right'));
   
-  document.querySelector('.sorting.tie.button').addEventListener('click', () => pick('tie'));
+  document.querySelector('.sorting.tie.button').addEventListener('click', () => {if (agonyMode) pick('coinflip'); else pick('tie');});
   document.querySelector('.sorting.undo.button').addEventListener('click', () =>{ if (agonyMode) displayTips(); else undo(); });
   document.querySelector('.sorting.save.button').addEventListener('click', () => saveProgress('Progress'));
   
@@ -96,8 +96,8 @@ function init() {
         case 's': case '3':                   saveProgress('Progress'); break;
         case 'h': case 'ArrowLeft':           pick('left'); break;
         case 'l': case 'ArrowRight':          pick('right'); break;
-        case 'k': case '1': case 'ArrowUp':   if (agonyMode) pick('tie'); else pick('coinflip'); break;
-        case 'j': case '2': case 'ArrowDown': if (agonyMode) displayTips(); else undo(); break;
+        case 'k': case '1': case 'ArrowUp':   if (agonyMode) pick('coinflip'); else pick('tie'); break;
+        case 'j': case '2': case 'ArrowDown': if (agonyMode) undo(); else displayTips(); break;
         default: break;
       }
     }
