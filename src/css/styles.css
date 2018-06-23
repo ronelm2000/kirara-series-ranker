@@ -219,8 +219,9 @@ body {
   display: grid;
   text-align: left;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  width: 450px;
+  grid-gap: 1vmin;
+  width: 100%;
+  max-width: 450px;
 }
 
 .options > div {

@@ -329,6 +329,14 @@ dataSet[dataSetVersion].characterData = [
       when: ["in"]
     }
   },
+  {
+    name: "Nene Sakura",
+    img: "https://i.imgur.com/rQPuFYZ.jpg",
+    opts: {
+      series: ["ng"],
+      when: ["in"]
+    }
+  },
 
   {
     name: "Tooru",
