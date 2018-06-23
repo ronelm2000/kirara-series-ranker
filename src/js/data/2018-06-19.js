@@ -337,6 +337,57 @@ dataSet[dataSetVersion].characterData = [
       when: ["in"]
     }
   },
+  {
+    name: "Umiko Ahagon",
+    img: "https://i.imgur.com/xhpJjXm.jpg",
+    opts: {
+      series: ["ng"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Momiji Mochizuki",
+    img: "https://i.imgur.com/d4zfF7D.jpg",
+    opts: {
+      series: ["ng"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Tsubame Narumi",
+    img: "https://i.imgur.com/d4zfF7D.jpg",
+    opts: {
+      series: ["ng"],
+      when: ["in"]
+    }
+  },
+  {
+    name: "Shizuku Hazuki",
+    img: "https://i.imgur.com/5w0JkRO.jpg?1",
+    tooltip: "She's officially called Haduki but no. Just no.",
+    opts: {
+      series: ["ng"],
+      when: ["never"]
+    }
+  },
+  {
+    name: "Christina Wako Yamato",
+    img: "https://i.imgur.com/Le6dnRN.png?1",
+    opts: {
+      series: ["ng"],
+      when: ["never"]
+    }
+  },
+  {
+    name: "Hotaru Hoshikawa",
+    img: "https://i.imgur.com/IWtrx5d.png?1",
+    opts: {
+      series: ["ng"],
+      when: ["never"]
+    }
+  },
+
+  
 
   {
     name: "Tooru",
