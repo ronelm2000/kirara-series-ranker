@@ -222,7 +222,7 @@ body {
   display: grid;
   text-align: left;
   grid-template-columns: repeat(3, 4fr);
-  grid-gap: 2.125vmin;
+  grid-gap: 3vmin;
   width: 100%;
   max-width: 80vh; /*old 450px*/
 }
