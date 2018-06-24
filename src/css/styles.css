@@ -167,14 +167,6 @@ body {
   cursor: pointer;
 }
 
-/*
-.sorter > .padded-image > img {
-  position: relative;
-  left: 100%;
-  margin-left: -200%;
-}
-*/
-
 .sorter > .padded-image > .image {
   width: 100%;
   max-width: 350px;
@@ -256,25 +248,26 @@ label:hover {
 
 .time.taken {
   margin-top: 0.5em;
-  width: 500px;
+  width: 80%;
   display: none;
   text-align: center;
   font-size: 0.75em;
 }
 
 .results {
-  font-size: 0.75em;
+  font-size: 15px;
   display: flex;
-  align-content: flex-start;
-  width: 80%;
-  margin: 2em auto;
+  width: 90%;
+  margin: 1em 0em;
+  flex: 1 0;
 }
 
 @media all and (min-width: 600px) {
   .results {
-    flex-flow: column wrap;
-    max-height: calc(5 * (175px + 2px) + 1 * (15px + 2px));
+    flex-flow: row wrap;
+    /*! max-height: calc(5 * (175px + 2px) + 1 * (15px + 2px)); */
     /* 2px for borders */
+    /*! flex: 1; */
   }
 }
 
@@ -285,21 +278,27 @@ label:hover {
 }
 
 .result {
-  height: 15px;
-  margin-bottom: -1px;
   display: grid;
-  width: 211px;
-  grid-template-columns: repeat(2, 1fr);
-  border: 1px solid #000;
-  margin-right: 5px;
+  width: 15%;
+  grid-template-columns: 1fr 5fr;
+  margin: 0.25em auto;
+  min-width: 220px;
+  background-color: rgba(100,100,255,0.33);
+  border-radius: 0.5em;
+  padding: 0.025em 0.025em;
 }
 
-.result.image {
-  height: 175px;
+.result.image.table-break {
+  break-after: always;
+  page-break-after: always;
+}
+
+.result > .right > div {
+  padding: 0.5em 0;
 }
 
 .result.image img {
-  height: 160px;
+  width: inherit;
 }
 
 .result.spacer {
@@ -310,11 +309,12 @@ label:hover {
 .result.head {
   background-color: #000;
   color: #FFF;
+  display: none;
 }
 
 .result > .left {
-  width: 35px;
-  padding: 1px 3px 1px 0.5em;
+  /*! width: 1.5em; */
+  padding: 0.2em 0.75em 0.2em 0.5em;
   grid-column: 1 / 2;
   text-align: right;
 }
@@ -324,18 +324,22 @@ label:hover {
 }
 
 .result.image > .left span {
-  position: absolute;
+  position: relative;
   top: 50%;
-  right: 3px;
+  right: 0.05em;
   margin-top: -0.375em;
 }
 
 .result > .right {
-  width: 160px;
-  padding: 1px 0em 1px 0em;
+  padding: 0.05em 0em 0.05em 0em;
   grid-column: 2 / 3;
-  border-left: 1px solid #000;
+  /*! border-left: 1px solid #000; */
   text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: space-between;
 }
 
 .info {

@@ -516,15 +516,15 @@ function result(imageNum = 3) {
 
   const header = '<div class="result head"><div class="left">Order</div><div class="right">Name</div></div>';
   const timeStr = `This sorter was completed on ${new Date(timestamp + timeTaken).toString()} and took ${msToReadableTime(timeTaken)}. <br />` +
-                  ((agonyMode) ? `Agony Mode was enabled. The one who ranked this list did ${coinFlips} coin flips.<br />` : ``) +
+                  ((agonyMode) ? `Agony Mode was enabled. <br />The one who ranked this list did ${coinFlips} coin flips.<br />` : ``) +
                   `<a href="${location.protocol}//${sorterURL}">Do another sorter?</a>`;
-  const imgRes = (char, num) => {
-    const charName = reduceTextWidth(char.name, 'Arial 12px', 160);
+  const imgRes = (char, num, isLast = false) => {
+    const charName = reduceTextWidth(char.name, '\'Open Sans\' 12px', 160);
     const charTooltip = char.name !== charName ? char.name : '';
-    return `<div class="result image"><div class="left"><span>${num}</span></div><div class="right"><img src="${char.img}"><div><span title="${charTooltip}">${charName}</span></div></div></div>`;
+    return `<div class="result image ${isLast?'table-break':''}"><div class="left"><span>${num}</span></div><div class="right"><img src="${char.img}"><div><span title="${charTooltip}">${charName}</span></div></div></div>`;
   }
   const res = (char, num) => {
-    const charName = reduceTextWidth(char.name, 'Arial 12px', 160);
+    const charName = reduceTextWidth(char.name, '\'Open Sans\' 12px', 160);
     const charTooltip = char.name !== charName ? char.name : '';
     return `<div class="result"><div class="left">${num}</div><div class="right"><span title="${charTooltip}">${charName}</span></div></div>`;
   }
@@ -544,7 +544,7 @@ function result(imageNum = 3) {
     const characterIndex = finalSortedIndexes[idx];
     const character = characterDataToSort[characterIndex];
     if (imageDisplay-- > 0) {
-      resultTable.insertAdjacentHTML('beforeend', imgRes(character, rankNum));
+      resultTable.insertAdjacentHTML('beforeend', imgRes(character, rankNum, imageDisplay == 0));
     } else {
       resultTable.insertAdjacentHTML('beforeend', res(character, rankNum));
     }
