@@ -45,6 +45,19 @@ dataSet[dataSetVersion].options = [
     ]
   },
   {
+    name: "Filter by Importance",
+    key: "status",
+    tooltip: "Okay, seriously, I have an actual standard for this.",
+    checked: true,
+    sub: [
+        { name: "Main Cast", key: "main", tooltip: "By definition, she appears in at least 33% of all chapters after his/her debut."},
+        { name: "Game Cast", key: "game", tooltip: "She\'d normally be less than a recurring character, but if she's in the game, she has to be either a fan favorite or an important character!"},
+        { name: "Rival", key: "anta", tooltip: "She appears in at least one major arc as a foil / rival / enemy."},
+        { name: "Recurring", key: "recur", tooltip: "She appears in at least 10% of all chapters after his/her debut."},
+        { name: "Non-Recurring", key: "side", tooltip: "She only appears in one arc after debut, and for the rest of the manga / anime, she is absent. Also, all characters that do not fit the criteria for recurring also fit here.", checked: false}
+    ]
+  },
+  {
     name: "No Traps",
     key: "trap",
     checked: false,
@@ -59,12 +72,14 @@ dataSet[dataSetVersion].options = [
 ];
 
 dataSet[dataSetVersion].characterData = [
+  // Hidamari Sketch
   {
     name: "Yuno",
     img: "https://i.imgur.com/5l2Ekoc.jpg",
     opts: {
       series: [ "wide" ],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -72,7 +87,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/cNbZ8Gg.jpg",
     opts: {
       series: [ "wide" ],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -80,7 +96,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/WHJzb50.jpg",
     opts: {
       series: ["wide"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -88,7 +105,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/TUVJgMh.jpg",
     opts: {
       series: ["wide"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -96,7 +114,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/F0ToNFe.jpg",
     opts: {
       series: ["wide"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -104,7 +123,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/chPqUyM.jpg",
     opts: {
       series: ["wide"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -112,7 +132,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/HQ585oP.png",
     opts: {
       series: ["wide"],
-      when: ["never"]
+      when: ["never"],
+      status: ["recur"]
     }
   },
   {
@@ -121,18 +142,20 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["wide"],
       when: ["never"],
+      status: ["main"],
       nonanimu: true
     }
   },
 
 
-
+  // Yuyushiki
   {
     name: "Yuzuko Nonohara",
     img: "https://i.imgur.com/L0NW5TO.jpg",
     opts: {
       series: ["yys"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -140,7 +163,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/cgAG4bf.jpg",
     opts: {
       series: ["yys"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -148,7 +172,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/qaIc7uo.jpg",
     opts: {
       series: ["yys"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -156,7 +181,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/GP5t5Eb.jpg",
     opts: {
       series: ["yys"],
-      when: ["in"]
+      when: ["in"],
+      status: ["recur"]
     }
   },
   {
@@ -164,7 +190,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/JcVdm7T.jpg",
     opts: {
       series: ["yys"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -172,7 +199,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/CKkoeBm.jpg",
     opts: {
       series: ["yys"],
-      when: ["in"]
+      when: ["in"],
+      status: ["recur"]
     }
   },
   {
@@ -180,18 +208,19 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/TRuWpVp.jpg",
     opts: {
       series: ["yys"],
-      when: ["never"]
+      when: ["recur"]
     }
   },
 
 
-
+  // Gakkou Gurashi
   {
     name: "Yuki Takeya",
     img: "https://i.imgur.com/92TcgbJ.jpg",
     opts: {
       series: ["gg"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -199,7 +228,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/5kTdgCk.jpg",
     opts: {
       series: ["gg"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -207,7 +237,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/djD9QzI.jpg",
     opts: {
       series: ["gg"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -215,7 +246,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/iPOUVOX.jpg",
     opts: {
       series: ["gg"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main", "recur"]
     }
   },
   {
@@ -223,7 +255,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/d7Snyy2.jpg",
     opts: {
       series: ["gg"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -232,6 +265,7 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["gg"],
       when: ["never"],
+      status: ["main"],
       nonanimu: true
     }
   },
@@ -241,6 +275,7 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["gg"],
       when: ["never"],
+      status: ["main"],
       nonanimu: true
     }
   },
@@ -250,6 +285,7 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["gg"],
       when: ["never"],
+      status: ["main"],
       nonanimu: true
     }
   },
@@ -259,6 +295,7 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["gg"],
       when: ["never"],
+      status: ["main"],
       nonanimu: true
     }
   },
@@ -268,6 +305,7 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["gg"],
       when: ["never"],
+      status: ["main"],
       nonanimu: true
     }
   },
@@ -276,17 +314,20 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/IhlBqzf.jpg?1",
     opts: {
       series: ["gg"],
-      when: ["never"]
+      when: ["never"],
+      status: ["side"]
     }
   },
 
 
+  // New Game
   {
     name: "Aoba Suzukaze",
     img: "https://i.imgur.com/p8rY4Ig.jpg",
     opts: {
       series: ["ng"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -294,7 +335,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/5dOhBCb.jpg",
     opts: {
       series: ["ng"],
-      when:["in"]
+      when:["in"],
+      status: ["main"]
     }
   },
   {
@@ -302,7 +344,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/3ieZMGf.jpg",
     opts: {
       series: ["ng"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -310,7 +353,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/BakGJt0.jpg",
     opts: {
       series: ["ng"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -318,7 +362,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/MfBHah2.jpg",
     opts: {
       series: ["ng"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -326,7 +371,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/0vJEsV6.jpg",
     opts: {
       series: ["ng"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -334,7 +380,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/rQPuFYZ.jpg",
     opts: {
       series: ["ng"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -342,7 +389,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/xhpJjXm.jpg",
     opts: {
       series: ["ng"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -350,15 +398,17 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/d4zfF7D.jpg",
     opts: {
       series: ["ng"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main", "anta"]
     }
   },
   {
     name: "Tsubame Narumi",
-    img: "https://i.imgur.com/d4zfF7D.jpg",
+    img: "https://i.imgur.com/uHa3HP8.jpg",
     opts: {
       series: ["ng"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main", "anta"]
     }
   },
   {
@@ -367,7 +417,8 @@ dataSet[dataSetVersion].characterData = [
     tooltip: "She's officially called Haduki but no. Just no.",
     opts: {
       series: ["ng"],
-      when: ["never"]
+      when: ["never"],
+      status: ["recur"]
     }
   },
   {
@@ -375,7 +426,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/Le6dnRN.png?1",
     opts: {
       series: ["ng"],
-      when: ["never"]
+      when: ["never"],
+      status: ["side", "anta"]
     }
   },
   {
@@ -383,18 +435,20 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/IWtrx5d.png?1",
     opts: {
       series: ["ng"],
-      when: ["never"]
+      when: ["never"],
+      status: ["recur"]
     }
   },
 
   
-
+  // A Channel
   {
     name: "Tooru",
     img: "https://i.imgur.com/lWooYNy.jpg",
     opts: {
       series: ["achan"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -402,7 +456,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/ebsBgzG.jpg",
     opts: {
       series: ["achan"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -410,7 +465,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/sek4Gtu.jpg",
     opts: {
       series: ["achan"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -418,7 +474,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/L139c9B.jpg",
     opts: {
       series: ["achan"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -426,7 +483,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/QddPCdv.jpg",
     opts: {
       series: ["achan"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -434,18 +492,20 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/gu8tZD0.png?1",
     opts: {
       series: ["achan"],
-      when: ["never"]
+      when: ["never"],
+      status: ["main"]
     }
   },
 
 
-
+  // Kiniro Mosaic
   {
     name: "Karen Kujou",
     img: "https://i.imgur.com/5URXuui.jpg",
     opts: {
       series: ["km"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -453,7 +513,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/o6bSQh9.jpg",
     opts: {
       series: ["km"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -461,7 +522,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/azmRVtf.jpg",
     opts: {
       series: ["km"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -469,7 +531,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/PJxlbjW.jpg",
     opts: {
       series: ["km"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -477,7 +540,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/axxZUpr.jpg",
     opts: {
       series: ["km"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -485,7 +549,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/2gCfVEJ.jpg",
     opts: {
       series: ["km"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -493,7 +558,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/RxESoYN.jpg",
     opts: {
       series: ["km"],
-      when: ["in"]
+      when: ["in"],
+      status: ["recur"]
     }
   },
   {
@@ -501,7 +567,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/a2UrZ8S.jpg",
     opts: {
       series: ["km"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   },
   {
@@ -509,7 +576,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/QyeV3qt.jpg",
     opts: {
       series: ["km"],
-      when: ["in"]
+      when: ["in"],
+      status: ["main"]
     }
   }
 ];
