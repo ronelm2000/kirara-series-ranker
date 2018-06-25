@@ -801,7 +801,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Hideri Kanzaki",
-    img: "https://i.imgur.com/pbgyJYD.jpg",
+    img: "https://i.imgur.com/rzjhB1z.png",
     opts: {
       series: ["blends"],
       when: ["never"],
@@ -871,7 +871,8 @@ dataSet[dataSetVersion].characterData = [
   opts: {
       series: ["urara"],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      nonanimu: true
     }
   }
 ];
