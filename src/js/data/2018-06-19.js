@@ -11,7 +11,7 @@ dataSet[dataSetVersion].options = [
       { name: "Original", tooltip: "feat. salt", key: "kirara" },
       { name: "Hidamari Sketch", tooltip: "aka nutbladder grills", key: "wide" },
       { name: "Gakkou Gurashi", tooltip: "spoiler: there is (no) hope", key: "gg" },
-      { name: "A Channel", tooltip: "suki tooru~~", key: "achan" }, 
+      { name: "A Channel", tooltip: "suki tooru~~", key: "achan" },
       { name: "Yuyushiki", tooltip: "yui's harem", key: "yys" },
       { name: "Kin`iro Mosaic", tooltip: "dess", key: "km" },
       { name: "New Game!", tooltip: "ganbaruzoi", key: "ng" },
@@ -38,9 +38,9 @@ dataSet[dataSetVersion].options = [
     key: "when",
     tooltip: "Check this to restrict to characters that appear in the game.",
     checked: false,
-    sub: [ 
-        { name: "In-Game", key: "in" }, 
-        { name: "Soon.tm", tooltip: "aka datamined", key: "soon" }, 
+    sub: [
+        { name: "In-Game", key: "in" },
+        { name: "Soon.tm", tooltip: "aka datamined", key: "soon" },
         { name: "Never.tm", key: "never" }
     ]
   },
@@ -440,7 +440,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
 
-  
+
   // A Channel
   {
     name: "Tooru",
@@ -580,4 +580,69 @@ dataSet[dataSetVersion].characterData = [
       status: ["main"]
     }
   }
+
+// Urara Meirochou
+  {
+    name: "Chiya",
+    img: "https://i.imgur.com/eBN4GyI.jpg",
+    opts: {
+      series: ["urara"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Kon Tatsumi",
+    img: "https://i.imgur.com/4F0PsCK.jpg",
+    opts: {
+      series: ["urara"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Koume Yukimi",
+    img: "https://i.imgur.com/TFhcRab.jpg",
+    opts: {
+      series: ["urara"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Nono Natsume",
+    img: "https://i.imgur.com/rVTC4z8.jpg",
+    opts: {
+      series: ["urara"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Saku Iroi",
+    img: "https://i.imgur.com/UfhhRxQ.jpg",
+    opts: {
+      series: ["urara"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Nina Natsume",
+    img: "https://i.imgur.com/SHRbP8I.jpg",
+    opts: {
+      series: ["urara"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+  name: "Omi Nijou",
+  img: "https://i.imgur.com/xIyeAVA.jpg",
+  opts: {
+      series: ["urara"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
 ];
