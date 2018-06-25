@@ -808,7 +808,7 @@ dataSet[dataSetVersion].characterData = [
       status: ["main"],
       trap: true
     }
-  }
+  },
 
 // Urara Meirochou
   {
@@ -873,5 +873,5 @@ dataSet[dataSetVersion].characterData = [
       when: ["in"],
       status: ["main"]
     }
-  },
+  }
 ];
