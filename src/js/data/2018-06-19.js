@@ -579,5 +579,234 @@ dataSet[dataSetVersion].characterData = [
       when: ["in"],
       status: ["main"]
     }
+  },
+
+
+  // Stella no Mahou
+  {
+    name: "Tamaki Honda",
+    img: "https://i.imgur.com/bUCJJLY.jpg",
+    opts: {
+      series: ["snm"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Kayo Fujikawa",
+    img: "https://i.imgur.com/66TOqSK.jpg",
+    opts: {
+      series: ["snm"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Shiina Murakami",
+    img: "https://i.imgur.com/C8a072I.jpg",
+    opts: {
+      series: ["snm"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Ayame Seki",
+    img: "https://i.imgur.com/8dznFFB.jpg",
+    opts: {
+      series: ["snm"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Yumine Fuda",
+    img: "https://i.imgur.com/pNDnT4N.jpg",
+    opts: {
+      series: ["snm"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Teru Hyakutake",
+    img: "https://i.imgur.com/30PorMj.jpg",
+    opts: {
+      series: ["snm"],
+      when: ["in"],
+      status: ["recur"]
+    }
+  },
+
+
+  // Kill Me Baby
+  {
+    name: "Yasuna Oribe",
+    img: "https://i.imgur.com/ZkAWMB4.jpg",
+    opts: {
+      series: ["kmb"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Sonya",
+    img: "https://i.imgur.com/OdOHOo5.jpg",
+    opts: {
+      series: ["kmb"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Agiri Goshiki",
+    img: "https://i.imgur.com/rGImX7i.jpg",
+    opts: {
+      series: ["kmb"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Unused Character",
+    img: "https://i.imgur.com/OBbq22v.jpg?1",
+    opts: {
+      series: ["kmb"],
+      when: ["never"],
+      status: ["side"]
+    }
+  },
+
+
+  // Sakura Trick
+  {
+    name: "Haruka Takayama",
+    img: "https://i.imgur.com/KTDZz6R.jpg",
+    opts: {
+      series: ["gay"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Yuu Sonoda",
+    img: "https://i.imgur.com/A90z1hY.jpg",
+    opts: {
+      series: ["gay"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Shizuku Minami",
+    img: "https://i.imgur.com/2Ur7sYh.jpg",
+    opts: {
+      series: ["gay"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Kotone Noda",
+    img: "https://i.imgur.com/KcBa8tw.jpg",
+    opts: {
+      series: ["gay"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Kaede Ikeno",
+    img: "https://i.imgur.com/LpzlvyA.jpg",
+    opts: {
+      series: ["gay"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Yuzu Iizuka",
+    img: "https://i.imgur.com/wLQ0QkC.jpg",
+    opts: {
+      series: ["gay"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Mitsuki Sonoda",
+    img: "https://i.imgur.com/iTEN611.png?1",
+    opts: {
+      series: ["gay"],
+      when: ["never"],
+      status: ["anta", "recur"]
+    }
+  },
+  {
+    name: "Rina Sakai",
+    img: "https://i.imgur.com/3rIBQEw.jpg?1",
+    opts: {
+      series: ["gay"],
+      when: ["never"],
+      status: ["side"]
+    }
+  },
+  {
+    name: "Sumi Otokawa",
+    img:"https://i.imgur.com/idbHJpK.png?1",
+    opts: {
+      series: ["gay"],
+      when: ["never"],
+      status: ["side"]
+    }
+  },
+
+
+  // Blend S
+  {
+    name: "Maika Sakuranomiya",
+    img: "https://i.imgur.com/e3d4iSl.jpg",
+    opts: {
+      series: ["blends"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Kaho Hinata",
+    img: "https://i.imgur.com/6rmFs88.jpg",
+    opts: {
+      series: ["blends"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Mafuyu Hoshikawa",
+    img: "https://i.imgur.com/xGMbWIR.jpg",
+    opts: {
+      series: ["blends"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Miu Amano",
+    img: "https://i.imgur.com/rL6dWi3.jpg",
+    opts: {
+      series: ["blends"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Hideri Kanzaki",
+    img: "https://i.imgur.com/pbgyJYD.jpg",
+    opts: {
+      series: ["blends"],
+      when: ["never"],
+      status: ["main"],
+      trap: true
+    }
   }
 ];
