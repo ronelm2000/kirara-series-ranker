@@ -142,7 +142,7 @@ function init() {
     document.querySelector('.image.selector > select').insertAdjacentElement('beforeend', select);
   }
 
-  document.querySelector('.image.selector > select').addEventListener('input', (e) => {
+  document.querySelector('.image.selector > select').addEventListener('change', (e) => {
     const imageNum = e.target.options[e.target.selectedIndex].value;
     result(Number(imageNum));
   });
