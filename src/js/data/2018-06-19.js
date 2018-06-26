@@ -874,5 +874,112 @@ dataSet[dataSetVersion].characterData = [
       status: ["main"],
       nonanimu: true
     }
+  },
+
+  /// OTHER GAME SERIES GO HERE
+
+  /// END
+
+  /// START OF NON-GAME SERIES
+  // Gochuumon Usagi desu ka?
+  {
+    name: "Cocoa Hoto",
+    img: "https://i.imgur.com/tFcj6TS.jpg",
+    tooltip: "Source: Twitter / Official / April Fools",
+    opts: {
+      series: ["rabbits"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Chino Kafuu",
+    img: "https://i.imgur.com/SQFRNcy.jpg",
+    tooltip: "Source: Twitter / Official / April Fools",
+    opts: {
+      series: ["rabbits"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Rize Tazeda",
+    img: "https://i.imgur.com/IgAq8fy.jpg",
+    tooltip: "Source: Twitter / Official / April Fools",
+    opts: {
+      series: ["rabbits"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Syaro Kirima",
+    img: "https://i.imgur.com/phFL728.jpg",
+    tooltip: "Source: Twitter / Official / April Fools",
+    opts: {
+      series: ["rabbits"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Chiya Ujimatsu",
+    img: "https://i.imgur.com/PDdtOan.jpg",
+    tooltip: "Source: Twitter / Official / April Fools",
+    opts: {
+      series: ["rabbits"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Maya Jouga",
+    img: "https://i.imgur.com/4F7MhCZ.jpg",
+    tooltip: "Source: Twitter / Official / April Fools",
+    opts: {
+      series: ["rabbits"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Megumi Natsu",
+    img: "https://i.imgur.com/her07EB.jpg",
+    tooltip: "Source: Twitter / Official / April Fools",
+    opts: {
+      series: ["rabbits"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Mocha Hoto",
+    img: "https://i.imgur.com/vscMmBf.jpg",
+    tooltip: "Source: Twitter / Official / April Fools",
+    opts: {
+      series: ["rabbits"],
+      when: ["never"],
+      status: ["anta", "main"]
+    }
+  },
+  {
+    name: "Midori Aoyama",
+    img: "https://i.imgur.com/l2lnxMz.jpg",
+    tooltip: "Source: Twitter / Official / April Fools",
+    opts: {
+      series: ["rabbits"],
+      when: ["never"],
+      status: ["recur"]
+    }
+  },
+  {
+    name: "Rin Mate",
+    img: "https://i.imgur.com/Z5XdThE.jpg",
+    tooltip: "Source: Twitter / Official / April Fools",
+    opts: {
+      series: ["rabbits"],
+      when: ["never"],
+      status: ["side"]
+    }
   }
 ];
