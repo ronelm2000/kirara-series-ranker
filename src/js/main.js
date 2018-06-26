@@ -53,7 +53,7 @@ let finalCharacters = [];
 let loading         = false;
 let totalBattles    = 0;
 let sorterURL       = window.location.host + window.location.pathname;
-let storedSaveType  = localStorage.getItem(`${sorterURL}_saveType`);
+let storedSaveType  = isLocalStorageSupported() ? localStorage.getItem(`${sorterURL}_saveType`) : '';
 
 let tipContent      = null;
 let tipModal        = null;
@@ -61,6 +61,18 @@ let tipCloseButton  = null;
 
 let agonyTooltip    = "If this is enabled, you are a true masochist."; 
 
+
+function isLocalStorageSupported() {
+  try {
+    const storage = localStorage;
+    const key = "__some_random_key_you_are_not_going_to_use__";
+    storage.setItem(key, key);
+    storage.removeItem(key);
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
 
 /** Initialize script. */
 function init() {
@@ -130,7 +142,7 @@ function init() {
     document.querySelector('.image.selector > select').insertAdjacentElement('beforeend', select);
   }
 
-  document.querySelector('.image.selector > select').addEventListener('input', (e) => {
+  document.querySelector('.image.selector > select').addEventListener('change', (e) => {
     const imageNum = e.target.options[e.target.selectedIndex].value;
     result(Number(imageNum));
   });
@@ -521,7 +533,19 @@ function result(imageNum = 3) {
   const imgRes = (char, num, isLast = false) => {
     const charName = reduceTextWidth(char.name, '\'Open Sans\' 12px', 160);
     const charTooltip = char.name !== charName ? char.name : '';
-    return `<div class="result image ${isLast?'table-break':''}"><div class="left"><span>${num}</span></div><div class="right"><img src="${char.img}"><div><span title="${charTooltip}">${charName}</span></div></div></div>`;
+    return `<div class="result image ${isLast?'table-break':''}">
+              <div class="left">
+                <span>${num}</span>
+              </div>
+              <div class="right">
+                <img src="${char.img}" />
+                <div>
+                  <span title="${charTooltip}">${charName}</span>
+                </div>
+              </div>
+            </div>${isLast?`
+            <div class="flex-break"></div>`:''}
+            `; // Non-Firefox workaround.
   }
   const res = (char, num) => {
     const charName = reduceTextWidth(char.name, '\'Open Sans\' 12px', 160);

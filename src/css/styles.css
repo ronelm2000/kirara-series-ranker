@@ -40,7 +40,7 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   margin-top: 1em;
-  background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 225, 253));
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 182, 193, 255), rgba(255, 255, 255, 0));
 }
 
 .progress {
@@ -222,6 +222,7 @@ body {
 .options > div {
   font-size: 1.325vh; /*Chrome somehow ignores 0.5625em; */
   letter-spacing: -0.025vmin;
+  text-shadow: 0.075em 0.075em #b3d1ff;
 }
 
 label {
@@ -258,8 +259,9 @@ label:hover {
   font-size: 15px;
   display: flex;
   width: 90%;
-  margin: 1em 0em;
-  flex: 1 0;
+  margin: 1em auto;
+  flex: 1 1 20%;
+  justify-content: space-around;
 }
 
 @media all and (min-width: 600px) {
@@ -273,24 +275,30 @@ label:hover {
 
 @media all and (max-width: 600px) {
   .results {
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
+    flex: 1 1 33%;
   }
 }
 
 .result {
   display: grid;
-  width: 15%;
+  width: 16em;
   grid-template-columns: 1fr 5fr;
-  margin: 0.25em auto;
+  margin: 0.25em 0em;
   min-width: 220px;
   background-color: rgba(100,100,255,0.33);
   border-radius: 0.5em;
   padding: 0.025em 0.025em;
+  max-width: 20%;
 }
 
 .result.image.table-break {
   break-after: always;
   page-break-after: always;
+}
+
+.flex-break {
+  flex-basis: 100%;
 }
 
 .result > .right > div {

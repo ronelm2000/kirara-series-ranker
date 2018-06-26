@@ -208,7 +208,8 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/TRuWpVp.jpg",
     opts: {
       series: ["yys"],
-      when: ["recur"]
+      when: ["recur"],
+      status: ["recur"]
     }
   },
 
