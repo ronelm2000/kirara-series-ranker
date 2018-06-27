@@ -981,7 +981,7 @@ dataSet[dataSetVersion].characterData = [
   // Gochuumon Usagi desu ka?
   {
     name: "Cocoa Hoto",
-    img: "https://i.imgur.com/tFcj6TS.jpg",
+    img: "https://i.imgur.com/6FmRYa4.png",
     tooltip: "Source: Twitter / Official / April Fools",
     opts: {
       series: ["rabbits"],
@@ -991,7 +991,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Chino Kafuu",
-    img: "https://i.imgur.com/SQFRNcy.jpg",
+    img: "https://i.imgur.com/h4kPNQf.png",
     tooltip: "Source: Twitter / Official / April Fools",
     opts: {
       series: ["rabbits"],
@@ -1001,7 +1001,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Rize Tazeda",
-    img: "https://i.imgur.com/IgAq8fy.jpg",
+    img: "https://i.imgur.com/9eH0An5.png",
     tooltip: "Source: Twitter / Official / April Fools",
     opts: {
       series: ["rabbits"],
@@ -1011,7 +1011,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Syaro Kirima",
-    img: "https://i.imgur.com/phFL728.jpg",
+    img: "https://i.imgur.com/tCY04oi.png",
     tooltip: "Source: Twitter / Official / April Fools",
     opts: {
       series: ["rabbits"],
@@ -1021,7 +1021,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Chiya Ujimatsu",
-    img: "https://i.imgur.com/PDdtOan.jpg",
+    img: "https://i.imgur.com/XbiNMIP.png",
     tooltip: "Source: Twitter / Official / April Fools",
     opts: {
       series: ["rabbits"],
@@ -1031,7 +1031,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Maya Jouga",
-    img: "https://i.imgur.com/4F7MhCZ.jpg",
+    img: "https://i.imgur.com/BSqZQlc.png",
     tooltip: "Source: Twitter / Official / April Fools",
     opts: {
       series: ["rabbits"],
@@ -1041,7 +1041,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Megumi Natsu",
-    img: "https://i.imgur.com/her07EB.jpg",
+    img: "https://i.imgur.com/GGe1Qpg.png",
     tooltip: "Source: Twitter / Official / April Fools",
     opts: {
       series: ["rabbits"],
@@ -1051,7 +1051,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Mocha Hoto",
-    img: "https://i.imgur.com/vscMmBf.jpg",
+    img: "https://i.imgur.com/up2RpPg.png",
     tooltip: "Source: Twitter / Official / April Fools",
     opts: {
       series: ["rabbits"],
@@ -1061,7 +1061,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Midori Aoyama",
-    img: "https://i.imgur.com/l2lnxMz.jpg",
+    img: "https://i.imgur.com/uG9Bo6P.png",
     tooltip: "Source: Twitter / Official / April Fools",
     opts: {
       series: ["rabbits"],
@@ -1071,7 +1071,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Rin Mate",
-    img: "https://i.imgur.com/Z5XdThE.jpg",
+    img: "https://i.imgur.com/Q2vuEub.png",
     tooltip: "Source: Twitter / Official / April Fools",
     opts: {
       series: ["rabbits"],
