@@ -877,6 +877,102 @@ dataSet[dataSetVersion].characterData = [
     }
   },
 
+  // Yumekui Merry
+    {
+      name: "Merry Nightmare",
+      img: "https://i.imgur.com/bajvH05.jpg",
+      opts: {
+        series: ["merry"],
+        when: ["in"],
+        status: ["main"]
+      }
+    },
+    {
+      name: "Isana Tachibana",
+      img: "https://i.imgur.com/mEUz3wq.jpg",
+      opts: {
+        series: ["merry"],
+        when: ["in"],
+        status: ["main"]
+      }
+    },
+
+  // Yurukyan
+    {
+      name: "Rin Shima",
+      img: "https://i.imgur.com/5ErUzMs.jpg",
+      opts: {
+        series: ["yc"],
+        when: ["in"],
+        status: ["main"]
+      }
+    },
+    {
+      name: "Nadeshiko Kagamihara",
+      img: "https://i.imgur.com/8XeqUys.jpg",
+      opts: {
+        series: ["yc"],
+        when: ["in"],
+        status: ["main"]
+      }
+    },
+    {
+      name: "Chiaki Oogaki",
+      img: "https://i.imgur.com/r0bgj9g.jpg",
+      opts: {
+        series: ["yc"],
+        when: ["in"],
+        status: ["main"]
+      }
+    },
+    {
+      name: "Aoi Inuyama",
+      img: "https://i.imgur.com/ZFuNrUl.jpg",
+      opts: {
+        series: ["yc"],
+        when: ["in"],
+        status: ["main"]
+      }
+    },
+    {
+      name: "Ena Saitou",
+      img: "http://mslk.com/wp-content/uploads/2010/10/coming-soon-never-coming-mslk1.gif",
+      opts: {
+        series: ["yc"],
+        when: ["never"],
+        status: ["main"]
+      }
+    },
+
+    // Hanayamata
+      {
+        name: "Sekiya Naru",
+        img: "https://i.imgur.com/5ErUzMs.jpg",
+        opts: {
+          series: ["hana"],
+          when: ["in"],
+          status: ["main"]
+        }
+      },
+      {
+        name: "Hana N. Fountainstand",
+        img: "https://i.imgur.com/8XeqUys.jpg",
+        opts: {
+          series: ["hana"],
+          when: ["in"],
+          status: ["main"]
+        }
+      },
+      {
+        name: "Yaya Sasame",
+        img: "https://i.imgur.com/r0bgj9g.jpg",
+        opts: {
+          series: ["hana"],
+          when: ["in"],
+          status: ["main"]
+        }
+      },
+
   /// OTHER GAME SERIES GO HERE
 
   /// END
