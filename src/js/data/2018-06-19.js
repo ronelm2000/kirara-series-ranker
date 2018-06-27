@@ -947,7 +947,7 @@ dataSet[dataSetVersion].characterData = [
     // Hanayamata
       {
         name: "Sekiya Naru",
-        img: "https://i.imgur.com/5ErUzMs.jpg",
+        img: "https://i.imgur.com/g4K4aip.jpg",
         opts: {
           series: ["hana"],
           when: ["in"],
@@ -956,7 +956,7 @@ dataSet[dataSetVersion].characterData = [
       },
       {
         name: "Hana N. Fountainstand",
-        img: "https://i.imgur.com/8XeqUys.jpg",
+        img: "https://i.imgur.com/2RBo55C.jpg",
         opts: {
           series: ["hana"],
           when: ["in"],
@@ -965,7 +965,7 @@ dataSet[dataSetVersion].characterData = [
       },
       {
         name: "Yaya Sasame",
-        img: "https://i.imgur.com/r0bgj9g.jpg",
+        img: "https://i.imgur.com/IdTayFK.jpg",
         opts: {
           series: ["hana"],
           when: ["in"],
