@@ -1078,5 +1078,53 @@ dataSet[dataSetVersion].characterData = [
       when: ["never"],
       status: ["side"]
     }
+  },
+
+
+  // Anne Happy
+  {
+    name: "Anne Hanakoizumi",
+    img: "https://i.imgur.com/e7zWKrI.jpg",
+    opts: {
+      series: ["anhapi"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Ruri Hibarigaoka",
+    img: "https://i.imgur.com/jp7MEbd.png",
+    opts: {
+      series: ["anhapi"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Botan Kumegawa",
+    img: "https://i.imgur.com/D3pYgcK.png",
+    opts: {
+      series: ["anhapi"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Hibiki Hagyu",
+    img: "https://i.imgur.com/lJtxN1V.png",
+    opts: {
+      series: ["anhapi"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Ren Ekoda",
+    img: "https://i.imgur.com/JyfNl7B.png",
+    opts: {
+      series: ["anhapi"],
+      when: ["never"],
+      status: ["main"]
+    }
   }
 ];
