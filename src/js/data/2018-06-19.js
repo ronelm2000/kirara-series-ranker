@@ -30,7 +30,8 @@ dataSet[dataSetVersion].options = [
       { name: "K-ON!", tooltip: "KyoAni cashcow about cute girls not trying to do band things", key: "kon"},
       { name: "Koufuku Grafitti", tooltip: "Souma's grandma", key: "foodgasm"},
       { name: "Acchi Kocchi", tooltip: "This animu gave me diabetes", key: "acchi"},
-      { name: "Gochuumon Usagi desu ka?", tooltip: "civil war: cawfee VS gween tea", key: "rabbits" }
+      { name: "Gochuumon Usagi desu ka?", tooltip: "civil war: cawfee VS gween tea", key: "rabbits" },
+      { name: "Wakaba＊Girl", tooltip: "ping pong grils", key: "wakaba" }
     ]
   },
   {
@@ -1123,6 +1124,68 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/JyfNl7B.png",
     opts: {
       series: ["anhapi"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+      name: "Kodaira",
+      img: "https://i.imgur.com/JVukdFe.png?1",
+      opts: {
+        series: ["anhapi"],
+        when: ["never"],
+        status: ["anta", "main"]
+      }
+  },
+  {
+    name: "Tsubaki Sayama",
+    img: "https://i.imgur.com/4uzoEuL.png?1",
+    tooltip: "Ti Ti Timo Timo~",
+    opts: {
+      series: ["anhapi"],
+      when: ["never"],
+      status: ["main", "recur"]
+    }
+  },
+
+
+  // Wakaba Girl
+  {
+    name: "Wakaba Kohashi",
+    img: "https://i.imgur.com/dYUP68u.jpg",
+    tooltip: "Source: Magazine Scan",
+    opts: {
+      series: ["wakaba"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Nao Mashiba",
+    img: "https://i.imgur.com/84Vxxlr.jpg",
+    tooltip: "Source: Magazine Scan",
+    opts: {
+      series: ["wakaba"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Moeko Tokita",
+    img: "https://i.imgur.com/qL4n1gx.png",
+    tooltip: "Source: Magazine Scan",
+    opts: {
+      series: ["wakaba"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Mao Kurokawa",
+    img: "https://i.imgur.com/0NDEPes.jpg",
+    tooltip: "Source: Magazine Scan",
+    opts: {
+      series: ["wakaba"],
       when: ["never"],
       status: ["main"]
     }
