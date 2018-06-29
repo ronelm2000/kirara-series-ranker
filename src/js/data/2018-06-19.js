@@ -898,6 +898,44 @@ dataSet[dataSetVersion].characterData = [
       }
     },
 
+    // Slow Start
+      {
+        name: "Hana Ichinose",
+        img: "https://i.imgur.com/WpzwFZ5.jpg",
+        opts: {
+          series: ["ss"],
+          when: ["in"],
+          status: ["main"]
+        }
+      },
+      {
+        name: "Kamuri Sengoku",
+        img: "https://i.imgur.com/D1Ilw8B.jpg",
+        opts: {
+          series: ["ss"],
+          when: ["in"],
+          status: ["main"]
+        }
+      },
+      {
+        name: "Eiko Tokura",
+        img: "https://i.imgur.com/a79XKDs.jpg",
+        opts: {
+          series: ["ss"],
+          when: ["in"],
+          status: ["main"]
+        }
+      },
+      {
+        name: "Tamate Momochi",
+        img: "https://i.imgur.com/64wrUz4.jpg",
+        opts: {
+          series: ["ss"],
+          when: ["in"],
+          status: ["main"]
+        }
+      },
+
   // Yurukyan
     {
       name: "Rin Shima",
@@ -973,6 +1011,44 @@ dataSet[dataSetVersion].characterData = [
           status: ["main"]
         }
       },
+
+      // Comiga
+        {
+          name: "Kaoruko Moeda",
+          img: "https://i.imgur.com/smulddG.jpg",
+          opts: {
+            series: ["comiga"],
+            when: ["in"],
+            status: ["main"]
+          }
+        },
+        {
+          name: "Koyume Koizuka",
+          img: "https://i.imgur.com/uiZ6UnM.jpg",
+          opts: {
+            series: ["comiga"],
+            when: ["in"],
+            status: ["main"]
+          }
+        },
+        {
+          name: "Ruki Irokawa",
+          img: "https://i.imgur.com/8yFKqS0.jpg",
+          opts: {
+            series: ["comiga"],
+            when: ["in"],
+            status: ["main"]
+          }
+        },
+        {
+          name: "Tsubasa Katsuki",
+          img: "https://i.imgur.com/GUSW0oF.jpg",
+          opts: {
+            series: ["comiga"],
+            when: ["in"],
+            status: ["main"]
+          }
+        },
 
   /// OTHER GAME SERIES GO HERE
 
