@@ -27,7 +27,7 @@ dataSet[dataSetVersion].options = [
       { name: "Comic Girls", tooltip: "abababa", key: "comiga" },
       { name: "Anne Happy", tooltip: "the kirara that describes you", key: "anhapi" },
       { name: "Harukana Recieve", tooltip: "haikyu, but fappable and always beach episode", key: "haruka" },
-      { name: "K-ON!", tooltip: "KyoAni cashcow about cute girls not trying to do band things", key: "kon"},
+      { name: "K-ON!", tooltip: "KyoAni cashcow about cute girls not trying to do band things", key: "htt"},
       { name: "Koufuku Grafitti", tooltip: "Souma's grandma", key: "foodgasm"},
       { name: "Acchi Kocchi", tooltip: "This animu gave me diabetes", key: "acchi"},
       { name: "Gochuumon Usagi desu ka?", tooltip: "civil war: cawfee VS gween tea", key: "rabbits" },
@@ -975,17 +975,26 @@ dataSet[dataSetVersion].characterData = [
     },
     {
       name: "Ena Saitou",
-      img: "http://mslk.com/wp-content/uploads/2010/10/coming-soon-never-coming-mslk1.gif",
+      img: "https://i.imgur.com/tZHtCFZ.jpg?1",
       opts: {
         series: ["yc"],
         when: ["never"],
         status: ["main"]
       }
     },
+    {
+      name: "Minami Toba",
+      img: "https://i.imgur.com/mi7Tzxx.png?1",
+      opts: {
+        series: ["yc"],
+        when: ["never"],
+        status: ["recur"]
+      }
+    },
 
     // Hanayamata
       {
-        name: "Sekiya Naru",
+        name: "Naru Sekiya",
         img: "https://i.imgur.com/g4K4aip.jpg",
         opts: {
           series: ["hana"],
@@ -1014,7 +1023,7 @@ dataSet[dataSetVersion].characterData = [
 
       // Comiga
         {
-          name: "Kaoruko Moeda",
+          name: "Kaoruko Moeta",
           img: "https://i.imgur.com/smulddG.jpg",
           opts: {
             series: ["comiga"],
@@ -1265,5 +1274,127 @@ dataSet[dataSetVersion].characterData = [
       when: ["never"],
       status: ["main"]
     }
+  },
+
+  
+  // K-ON!
+  {
+    name: "Yui Hirasawa",
+    img: "https://i.imgur.com/6CdngWz.png",
+    tooltip: "Source: Magazine Scan",
+    opts: {
+      series: ["htt"],
+      when: ["soon"],
+      status: ["main"],
+    
+    }
+  },
+  {
+    name: "Ritsu Tainaka",
+    img: "https://i.imgur.com/GknLnZj.png",
+    tooltip: "Source: Magazine Scan",
+    opts: {
+      series: ["htt"],
+      when: ["soon"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Mio Akiyama",
+    img: "https://i.imgur.com/8LFA2s8.png",
+    tooltip: "Source: Magazine Scan",
+    opts: {
+      series: ["htt"],
+      when: ["soon"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Tsumugi Kotobuki",
+    img: "https://i.imgur.com/mitkEbC.png",
+    tooltip: "Source: Magazine Scan",
+    opts: {
+      series: ["htt"],
+      when: ["soon"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Azusa Nakano",
+    img: "https://i.imgur.com/iLQIVUM.png",
+    tooltip: "Source: Magazine Scan",
+    opts: {
+      series: ["htt"],
+      when: ["soon"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Ui Hirasawa",
+    img: "https://i.imgur.com/eVetL22.png",
+    opts: {
+      series: ["htt"],
+      when: ["never"],
+      status: ["recur", "main"]
+    }
+  },
+  {
+    name: "Sawako Yamanaka",
+    img: "https://i.imgur.com/uahNEif.png",
+    opts: {
+      series: ["htt"],
+      when: ["never"],
+      status: ["recur"]
+    }
+  },
+  {
+    name: "Nodoka Manabe",
+    img: "https://i.imgur.com/5hPydoW.png",
+    opts: {
+      series: ["htt"],
+      when: ["never"],
+      status: ["recur"]
+    }
+  },
+  {
+    name: "Jun Suzuki",
+    img: "https://i.imgur.com/45kkift.png",
+    opts: {
+      series: ["htt"],
+      when: ["never"],
+      status: ["recur", "main"]
+    }
+  },
+  {
+    name: "Megumi Sokabe",
+    img: "https://i.imgur.com/0LREy3t.jpg?1",
+    opts: {
+      series: ["htt"],
+      when: ["never"],
+      status: ["side"]
+    }
+  },
+  // 2011 High School Arc
+  {
+    name: "Nao Okuda",
+    img: "https://i.imgur.com/Qb60op5.png",
+    opts: {
+      series: ["htt"],
+      when: ["never"],
+      status: ["main"],
+      nonanimu: true
+    }
+  },
+  {
+    name: "Sumire Saitou",
+    img: "https://i.imgur.com/w4sIeFG.png",
+    opts: {
+      series: ["htt"],
+      when: ["never"],
+      status: ["main"],
+      nonanimu: true
+    }
   }
+  // Currently Missing: College Arc mains
+  // END
 ];
