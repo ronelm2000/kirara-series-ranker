@@ -895,7 +895,9 @@ function preloadImages() {
   };
 
   const promises = characterDataToSort.map((char, idx) => loadImage(imageRoot + char.img, idx));
-  return Promise.all(promises);
+  return Promise.all(promises).catch((err) => {
+    log(err);
+  });
 }
 
 /**
