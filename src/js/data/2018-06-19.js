@@ -227,7 +227,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Kurumi Ebisuzawa",
-    img: "https://i.imgur.com/5kTdgCk.jpg",
+    img: "https://i.imgur.com/vllHhFw.jpg",
     opts: {
       series: ["gg"],
       when: ["in"],
@@ -899,42 +899,69 @@ dataSet[dataSetVersion].characterData = [
     },
 
     // Slow Start
-      {
-        name: "Hana Ichinose",
-        img: "https://i.imgur.com/WpzwFZ5.jpg",
-        opts: {
-          series: ["ss"],
-          when: ["in"],
-          status: ["main"]
-        }
-      },
-      {
-        name: "Kamuri Sengoku",
-        img: "https://i.imgur.com/D1Ilw8B.jpg",
-        opts: {
-          series: ["ss"],
-          when: ["in"],
-          status: ["main"]
-        }
-      },
-      {
-        name: "Eiko Tokura",
-        img: "https://i.imgur.com/a79XKDs.jpg",
-        opts: {
-          series: ["ss"],
-          when: ["in"],
-          status: ["main"]
-        }
-      },
-      {
-        name: "Tamate Momochi",
-        img: "https://i.imgur.com/64wrUz4.jpg",
-        opts: {
-          series: ["ss"],
-          when: ["in"],
-          status: ["main"]
-        }
-      },
+    {
+      name: "Hana Ichinose",
+      img: "https://i.imgur.com/WpzwFZ5.jpg",
+      opts: {
+        series: ["ss"],
+        when: ["in"],
+        status: ["main"]
+      }
+    },
+    {
+      name: "Kamuri Sengoku",
+      img: "https://i.imgur.com/D1Ilw8B.jpg",
+      opts: {
+        series: ["ss"],
+        when: ["in"],
+        status: ["main"]
+      }
+    },
+    {
+      name: "Eiko Tokura",
+      img: "https://i.imgur.com/a79XKDs.jpg",
+      opts: {
+        series: ["ss"],
+        when: ["in"],
+        status: ["main"]
+      }
+    },
+    {
+      name: "Tamate Momochi",
+      img: "https://i.imgur.com/64wrUz4.jpg",
+      opts: {
+        series: ["ss"],
+        when: ["in"],
+        status: ["main"]
+      }
+    },
+    {
+      name: "Kiyose Enami",
+      img: "https://i.imgur.com/1UpHb7J.png",
+      opts: {
+        series: ["ss"],
+        when: ["never"],
+        status: ["recur"]
+      }
+    },
+    {
+      name: "Shion Kyozuka",
+      img: "https://i.imgur.com/oIy2RuN.png",
+      opts: {
+        series: ["ss"],
+        when: ["never"],
+        status: ["main"]
+      }
+    },
+    {
+      name: "Hiroe Hannen",
+      img: "https://i.imgur.com/ERJQQso.png",
+      opts: {
+        series: ["ss"],
+        when: ["never"],
+        status: ["main"]
+      }
+    },
 
   // Yurukyan
     {
@@ -1394,7 +1421,76 @@ dataSet[dataSetVersion].characterData = [
       status: ["main"],
       nonanimu: true
     }
-  }
+  },
   // Currently Missing: College Arc mains
+
+
+  // Koufuku Graffiti
+  {
+    name: "Ryou Machiko",
+    img: "https://i.imgur.com/aqIBUGu.png",
+    opts: {
+      series: ["foodgasm"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Kirin Morino",
+    img: "https://i.imgur.com/YiaXy3f.png",
+    opts: {
+      series: ["foodgasm"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Shiina",
+    img: "https://i.imgur.com/kz6elXN.png",
+    opts: {
+      series: ["foodgasm"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Yuki Uchiki",
+    img: "https://i.imgur.com/0bRzvDT.png",
+    opts: {
+      series: ["foodgasm"],
+      when: ["never"],
+      status: ["recur"]
+    }
+  },
+
+
+  // Acchi Kocchi
+  {
+    name: "Tsumiki Miniwa",
+    img: "https://i.imgur.com/Tj3snKf.png",
+    opts: {
+      series: ["acchi"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Mayoi Katase",
+    img: "https://i.imgur.com/5j5RwHr.png",
+    opts: {
+      series: ["acchi"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Hime Haruno",
+    img: "https://i.imgur.com/kBdrRj7.png",
+    opts: {
+      series: ["acchi"],
+      when: ["never"],
+      status: ["main"]
+    }
+  }
   // END
 ];
