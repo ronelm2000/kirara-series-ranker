@@ -6,9 +6,9 @@ dataSet[dataSetVersion].options = [
     name: "Filter by Series",
     key: "series",
     tooltip: "Check this to restrict to certain series.",
-    checked: false,
+    checked: true,
     sub: [
-      { name: "Original", tooltip: "feat. salt", key: "kirara" },
+      { name: "Original", tooltip: "feat. salt", key: "kirara", checked: false},
       { name: "Hidamari Sketch", tooltip: "aka nutbladder grills", key: "wide" },
       { name: "Gakkou Gurashi", tooltip: "spoiler: there is (no) hope", key: "gg" },
       { name: "A Channel", tooltip: "suki tooru~~", key: "achan" },
@@ -26,7 +26,7 @@ dataSet[dataSetVersion].options = [
       { name: "Ha na ya ma ta", tooltip: "paato paato the dramafes", key: "hana" },
       { name: "Comic Girls", tooltip: "abababa", key: "comiga" },
       { name: "Anne Happy", tooltip: "the kirara that describes you", key: "anhapi" },
-      { name: "Harukana Recieve", tooltip: "haikyu, but fappable and always beach episode", key: "haruka" },
+      { name: "Haruka na Recieve", tooltip: "haikyu, but fappable and always beach episode", key: "haruka", checked: false},
       { name: "K-ON!", tooltip: "KyoAni cashcow about cute girls not trying to do band things", key: "htt"},
       { name: "Koufuku Grafitti", tooltip: "Souma's grandma", key: "foodgasm"},
       { name: "Acchi Kocchi", tooltip: "This animu gave me diabetes", key: "acchi"},
@@ -1047,6 +1047,33 @@ dataSet[dataSetVersion].characterData = [
           status: ["main"]
         }
       },
+      {
+        name: "Machi Tokiwa",
+        img: "https://i.imgur.com/6IXwETH.png",
+        opts: {
+          series: ["hana"],
+          when: ["never"],
+          status: ["main"]
+        }
+      },
+      {
+        name: "Tami Nishimikado",
+        img: "https://i.imgur.com/GBac75Y.png",
+        opts: {
+          series: ["hana"],
+          when: ["never"],
+          status: ["main"]
+        }
+      },
+      {
+        name: "Sari Tokiwa",
+        img: "https://i.imgur.com/sloNQvt.png",
+        opts: {
+          series: ["hana"],
+          when: ["never"],
+          status: ["main"]
+        }
+      },
 
       // Comiga
         {
@@ -1085,6 +1112,28 @@ dataSet[dataSetVersion].characterData = [
             status: ["main"]
           }
         },
+
+
+  // Haruka na Recieve
+  {
+    name: "Haruka Oozora",
+    tooltip:  "or Ozora, but eh...\n" +
+              "Source: Manga Cover",
+    opts: {
+      series: ["haruka"],
+      when: ["soon"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Kanata Higa",
+    tooltip: "Source: Manga Cover",
+    opts: {
+      series: ["haruka"],
+      when: ["soon"],
+      status: ["main"]
+    }
+  },
 
   /// OTHER GAME SERIES GO HERE
 
