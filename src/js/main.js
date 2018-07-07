@@ -134,11 +134,12 @@ function init() {
   document.querySelector('.image.selector').insertAdjacentElement('beforeend', document.createElement('select'));
 
   /** Initialize image quantity selector for results. */
-  for (let i = 0; i <= 10; i++) {
+  let noArray = [1, 3, 5, 6, 9, 10, 12, 15, 20];
+  for (let i = 0; i < noArray.length; i++) {
     const select = document.createElement('option');
-    select.value = i;
-    select.text = i;
-    if (i === 3) { select.selected = 'selected'; }
+    select.value = noArray[i];
+    select.text = noArray[i];
+    if (noArray[i] === 3) { select.selected = 'selected'; }
     document.querySelector('.image.selector > select').insertAdjacentElement('beforeend', select);
   }
 
