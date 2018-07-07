@@ -215,12 +215,12 @@ body {
   text-align: left;
   grid-template-columns: repeat(3, 4fr);
   grid-gap: 3vmin;
-  width: 100%;
+  width: 95%;
   max-width: 80vh; /*old 450px*/
 }
 
 .options > div {
-  font-size: 1.325vh; /*Chrome somehow ignores 0.5625em; */
+  font-size:  0.5em; /*Chrome somehow ignores 0.5625em; */
   letter-spacing: -0.025vmin;
   text-shadow: 0.075em 0.075em #b3d1ff;
 }
