@@ -1119,6 +1119,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Haruka Oozora",
     tooltip:  "or Ozora, but eh...\n" +
               "Source: Manga Cover",
+    img: "https://i.imgur.com/eNx3eMR.png",
     opts: {
       series: ["haruka"],
       when: ["soon"],
@@ -1128,6 +1129,7 @@ dataSet[dataSetVersion].characterData = [
   {
     name: "Kanata Higa",
     tooltip: "Source: Manga Cover",
+    img: "https://i.imgur.com/UfOyS1O.png",
     opts: {
       series: ["haruka"],
       when: ["soon"],
