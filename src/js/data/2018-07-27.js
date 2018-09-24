@@ -26,7 +26,7 @@ dataSet[dataSetVersion].options = [
       { name: "Ha na ya ma ta", tooltip: "paato paato the dramafes", key: "hana" },
       { name: "Comic Girls", tooltip: "abababa", key: "comiga" },
       { name: "Anne Happy", tooltip: "the kirara that describes you", key: "anhapi" },
-      { name: "Haruka na Recieve", tooltip: "haikyu, but fappable and always beach episode", key: "haruka", checked: false},
+      { name: "Haruka na Recieve", tooltip: "haikyu, but fappable and always beach episode", key: "haruka"},
       { name: "K-ON!", tooltip: "KyoAni cashcow about cute girls not trying to do band things", key: "htt"},
       { name: "Koufuku Grafitti", tooltip: "Souma's grandma", key: "foodgasm"},
       { name: "Acchi Kocchi", tooltip: "This animu gave me diabetes", key: "acchi"},
@@ -361,7 +361,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Kou Yagami",
-    img: "https://i.imgur.com/MfBHah2.jpg",
+    img: "https://i.imgur.com/VKkU0ip.jpg",
     opts: {
       series: ["ng"],
       when: ["in"],
@@ -434,10 +434,10 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Hotaru Hoshikawa",
-    img: "https://i.imgur.com/IWtrx5d.png?1",
+    img: "https://i.imgur.com/YjSCHNv.jpg",
     opts: {
       series: ["ng"],
-      when: ["never"],
+      when: ["in"],
       status: ["recur"]
     }
   },
@@ -473,7 +473,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Nagi",
-    img: "https://i.imgur.com/L139c9B.jpg",
+    img: "https://i.imgur.com/9qvxdJV.jpg",
     opts: {
       series: ["achan"],
       when: ["in"],
@@ -910,7 +910,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
       name: "Kamuri Sengoku",
-      img: "https://i.imgur.com/D1Ilw8B.jpg",
+      img: "https://i.imgur.com/znhDmEC.jpg",
       opts: {
         series: ["ss"],
         when: ["in"],
@@ -1114,25 +1114,45 @@ dataSet[dataSetVersion].characterData = [
         },
 
 
-  // Haruka na Recieve
+  // Harukana Recieve
   {
     name: "Haruka Oozora",
-    tooltip:  "or Ozora, but eh...\n" +
-              "Source: Manga Cover",
-    img: "https://i.imgur.com/eNx3eMR.png",
+    img: "https://i.imgur.com/GFnRZPv.jpg",
+    //tooltip:  "or Ozora, but eh...\n" +
+    //          "Source: Manga Cover",
+    //img: "https://i.imgur.com/eNx3eMR.png",
     opts: {
       series: ["haruka"],
-      when: ["soon"],
+      when: ["in"],
       status: ["main"]
     }
   },
   {
     name: "Kanata Higa",
-    tooltip: "Source: Manga Cover",
-    img: "https://i.imgur.com/UfOyS1O.png",
+    img: "https://i.imgur.com/he96Tag.jpg",
+    //old img: "https://i.imgur.com/UfOyS1O.png",
+    //tooltip: "Source: Manga Cover",
     opts: {
       series: ["haruka"],
-      when: ["soon"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Emily Thomas",
+    img: "https://i.imgur.com/HBrDEYF.jpg",
+    opts: {
+      series: ["haruka"],
+      when: ["in"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Claire Thomas",
+    img: "https://i.imgur.com/fkV7tOL.jpg",
+    opts: {
+      series: ["haruka"],
+      when: ["in"],
       status: ["main"]
     }
   },
@@ -1538,5 +1558,12 @@ dataSet[dataSetVersion].characterData = [
       status: ["main"]
     }
   }
+
+  
+  // Sansha Sanyou
+  //{
+  //  name: "Teru Hayama",
+  //  img: ""
+  //}
   // END
 ];

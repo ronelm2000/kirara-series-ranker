@@ -152,7 +152,7 @@ function init() {
   if (storedSaveType) {
     document.querySelector('.starting.load.button > span').insertAdjacentText('beforeend', storedSaveType);
     document.querySelectorAll('.starting.button').forEach(el => {
-      el.style['grid-row'] = 'span 3';
+      el.style['grid-row'] = 'span 2';
       el.style.display = 'block';
     });
   }
