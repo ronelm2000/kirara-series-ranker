@@ -1278,19 +1278,19 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Ruri Hibarigaoka",
-    img: "https://i.imgur.com/jp7MEbd.png",
+    img: "https://i.imgur.com/jp7MEbd.png", // No SSR art yet
     opts: {
       series: ["anhapi"],
-      when: ["never"],
+      when: ["in"],
       status: ["main"]
     }
   },
   {
     name: "Botan Kumegawa",
-    img: "https://i.imgur.com/D3pYgcK.png",
+    img: "https://i.imgur.com/D3pYgcK.png", // No SR art yet
     opts: {
       series: ["anhapi"],
-      when: ["never"],
+      when: ["in"],
       status: ["main"]
     }
   },
@@ -1416,7 +1416,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Azusa Nakano",
-    img: "https://i.imgur.com/XN3yxTI.jpg",
+    img: "https://i.imgur.com/gDMySi6.jpg",
     opts: {
       series: ["htt"],
       when: ["in"],
@@ -1428,7 +1428,7 @@ dataSet[dataSetVersion].characterData = [
     img: "https://i.imgur.com/eVetL22.png",
     opts: {
       series: ["htt"],
-      when: ["never"],
+      when: ["in"],
       status: ["recur", "main"]
     }
   },
