@@ -1,4 +1,4 @@
-dataSetVersion = "2018-06-19"; // Change this when creating a new data set version. YYYY-MM-DD format.
+npdataSetVersion = "2018-06-19"; // Change this when creating a new data set version. YYYY-MM-DD format.
 dataSet[dataSetVersion] = {};
 
 dataSet[dataSetVersion].options = [
@@ -1278,7 +1278,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Ruri Hibarigaoka",
-    img: "https://i.imgur.com/jp7MEbd.png", // No SSR art yet
+    img: "https://i.imgur.com/8uWBUTi.jpg",
     opts: {
       series: ["anhapi"],
       when: ["in"],
@@ -1287,7 +1287,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Botan Kumegawa",
-    img: "https://i.imgur.com/D3pYgcK.png", // No SR art yet
+    img: "https://i.imgur.com/4vs0sKn.jpg",
     opts: {
       series: ["anhapi"],
       when: ["in"],
