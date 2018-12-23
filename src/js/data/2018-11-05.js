@@ -32,7 +32,8 @@ dataSet[dataSetVersion].options = [
       { name: "Acchi Kocchi", tooltip: "This animu gave me diabetes", key: "acchi"},
       { name: "Gochuumon Usagi desu ka?", tooltip: "civil war: cawfee VS gween tea", key: "rabbits" },
       { name: "Wakaba＊Girl", tooltip: "ping pong grils", key: "wakaba" },
-      { name: "Anima Yell", tooltip: "not love live sunshine, mc is also not bakachika", key: "anima" }
+      { name: "Anima Yell", tooltip: "not love live sunshine, mc is also not bakachika", key: "anima" },
+      { name: "Sansha Sanyou", tooltip: "everyone's dying grandma feat. ex-ojou-chan", key: "3leaves"}
     ]
   },
   {
@@ -81,7 +82,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: [ "wide" ],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["ssr", "christmas2018"]
     }
   },
   {
@@ -223,7 +225,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["gg"],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["swimsuit", "ssr"]
     }
   },
   {
@@ -232,7 +235,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["gg"],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["ssr"]
     }
   },
   {
@@ -255,11 +259,12 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Yuri Wakasa",
-    img: "https://i.imgur.com/d7Snyy2.jpg",
+    img: "https://i.imgur.com/2GqbLBG.jpg",
     opts: {
       series: ["gg"],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["ssr"]
     }
   },
   {
@@ -339,7 +344,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["ng"],
       when:["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["ssr", "christmas2018"]
     }
   },
   {
@@ -451,7 +457,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["achan"],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["ssr", "christmas2018"]
     }
   },
   {
@@ -756,11 +763,12 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Sumi Otokawa",
-    img:"https://i.imgur.com/idbHJpK.png?1",
+    img:"https://i.imgur.com/tuf8d9z.jpg",
     opts: {
       series: ["gay"],
-      when: ["never"],
-      status: ["side"]
+      when: ["in"],
+      status: ["side"],
+      rarity: ["sr"]
     }
   },
 
@@ -786,11 +794,12 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Mafuyu Hoshikawa",
-    img: "https://i.imgur.com/xGMbWIR.jpg",
+    img: "https://i.imgur.com/sUcCxgA.jpg",
     opts: {
       series: ["blends"],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["ssr"]
     }
   },
   {
@@ -799,17 +808,29 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["blends"],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["sr"]
     }
   },
   {
     name: "Hideri Kanzaki",
-    img: "https://i.imgur.com/rzjhB1z.png",
+    img: "https://i.imgur.com/E1NPdK7.jpg",
     opts: {
       series: ["blends"],
-      when: ["never"],
+      when: ["in"],
       status: ["main"],
+      rarity: ["sr"],
       trap: true
+    }
+  },
+  {
+    name: "Aika Sakuranomiya",
+    img: "https://i.imgur.com/oy7IAi3.jpg",
+    opts: {
+      series: ["blends"],
+      when: ["in"],
+      status: ["recur"],
+      rarity: ["sr"]
     }
   },
 
@@ -886,7 +907,8 @@ dataSet[dataSetVersion].characterData = [
       opts: {
         series: ["merry"],
         when: ["in"],
-        status: ["main"]
+        status: ["main"],
+        rarity: ["ssr", "christmas2018"]
       }
     },
     {
@@ -929,11 +951,13 @@ dataSet[dataSetVersion].characterData = [
     },
     {
       name: "Tamate Momochi",
-      img: "https://i.imgur.com/64wrUz4.jpg",
+      img: "https://i.imgur.com/nxNye7Z.jpg",
+      tooltip: "........image change 11/10",
       opts: {
         series: ["ss"],
         when: ["in"],
-        status: ["main"]
+        status: ["main"],
+        rarity: ["ssr"]
       }
     },
     {
@@ -976,7 +1000,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
       name: "Nadeshiko Kagamihara",
-      img: "https://i.imgur.com/2hZl9mo.jpg",
+      img: "https://i.imgur.com/2hZl9mo.jpg", //TODO: Change it from Swimsuit ver. to Normal
       opts: {
         series: ["yc"],
         when: ["in"],
@@ -1002,12 +1026,13 @@ dataSet[dataSetVersion].characterData = [
       }
     },
     {
-      name: "Ena Saitou",
-      img: "https://i.imgur.com/tZHtCFZ.jpg?1",
+      name: "Ena Saito",
+      img: "https://i.imgur.com/Juyi9AY.jpg",
       opts: {
         series: ["yc"],
-        when: ["never"],
-        status: ["main"]
+        when: ["in"],
+        status: ["main"],
+        rarity: ["sr"]
       }
     },
     {
@@ -1158,30 +1183,32 @@ dataSet[dataSetVersion].characterData = [
     }
   },
 
-  /// OTHER GAME SERIES GO HERE
 
-  /// END
-
-  /// START OF NON-GAME SERIES
-  // Gochuumon Usagi desu ka?
+  // Gochuumon Usagi desu ka? 
   {
     name: "Cocoa Hoto",
-    img: "https://i.imgur.com/6FmRYa4.png",
-    tooltip: "Source: Twitter / Official / April Fools",
+    img: "https://i.imgur.com/YyAvDhc.jpg",
+    // Old
+    //img: "https://i.imgur.com/6FmRYa4.png",
+    //tooltip: "Source: Twitter / Official / April Fools",
     opts: {
       series: ["rabbits"],
-      when: ["never"],
-      status: ["main"]
+      when: ["in"],
+      status: ["main"],
+      rarity: ["ssr"]
     }
   },
   {
     name: "Chino Kafuu",
-    img: "https://i.imgur.com/h4kPNQf.png",
-    tooltip: "Source: Twitter / Official / April Fools",
+    img: "https://i.imgur.com/3I8DXoi.jpg",
+    //Old
+    //img: "https://i.imgur.com/h4kPNQf.png",
+    //tooltip: "Source: Twitter / Official / April Fools",
     opts: {
       series: ["rabbits"],
-      when: ["never"],
-      status: ["main"]
+      when: ["in"],
+      status: ["main"],
+      rarity: ["ssr"]
     }
   },
   {
@@ -1273,7 +1300,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["anhapi"],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["ssr"]
     }
   },
   {
@@ -1282,7 +1310,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["anhapi"],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["ssr"]
     }
   },
   {
@@ -1291,7 +1320,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["anhapi"],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["sr"]
     }
   },
   {
@@ -1332,6 +1362,46 @@ dataSet[dataSetVersion].characterData = [
     }
   },
 
+
+  // Anima Yell
+  {
+    name: "Kohane Hatoya",
+    img: "https://i.imgur.com/2YTeSTh.jpg",
+    tooltip: "chunchun",
+    opts: {
+      series: ["anima"],
+      when: ["in"],
+      status: ["main"],
+      rarity: ["ssr"]
+    }
+  },
+  {
+    name: "Hizume Arima",
+    img: "https://i.imgur.com/AQOCbDI.jpg",
+    opts: {
+      series: ["anima"],
+      when: ["in"],
+      status: ["main"],
+      rarity: ["sr"]
+    }
+  },
+  {
+    name: "Uki Sawatari",
+    img: "https://i.imgur.com/2HnezS0.jpg",
+    opts: {
+      series: ["anima"],
+      when: ["in"],
+      status: ["main"],
+      rarity: ["sr"]
+    }
+  },
+
+
+  /// OTHER GAME SERIES GO HERE
+
+  /// END
+
+  /// START OF NON-GAME SERIES
 
   // Wakaba Girl
   {
@@ -1425,7 +1495,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Ui Hirasawa",
-    img: "https://i.imgur.com/eVetL22.png",
+    img: "https://i.imgur.com/XiKaKbw.jpg",
     opts: {
       series: ["htt"],
       when: ["in"],
@@ -1558,13 +1628,119 @@ dataSet[dataSetVersion].characterData = [
       when: ["never"],
       status: ["main"]
     }
-  }
+  },
 
   
   // Sansha Sanyou
-  //{
-  //  name: "Teru Hayama",
-  //  img: ""
-  //}
+  {
+    name: "Youko Nishikawa",
+    img: "https://i.imgur.com/jAya3dy.png", // This is a placeholder image
+    opts: {
+      series: ["3leaves"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Futaba Odagiri",
+    img: "https://i.imgur.com/jAya3dy.png",
+    opts: {
+      series: ["3leaves"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Teru Hayama",
+    img: "https://i.imgur.com/jAya3dy.png",
+    opts: {
+      series: ["3leaves"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Shino Sonobe",
+    img: "https://i.imgur.com/jAya3dy.png",
+    opts: {
+      series: ["3leaves"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Kou Hayama",
+    img: "https://i.imgur.com/jAya3dy.png",
+    opts: {
+      series: ["3leaves"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Serina Nishiyama",
+    img: "https://i.imgur.com/jAya3dy.png",
+    opts: {
+      series: ["3leaves"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Sasame Tsuji",
+    img: "https://i.imgur.com/jAya3dy.png",
+    opts: {
+      series: ["3leaves"],
+      when: ["never"],
+      status: ["recur", "anta"]
+    }
+  },
+  {
+    name: "Hajime Tsuji",
+    img: "https://i.imgur.com/jAya3dy.png",
+    opts: {
+      series: ["3leaves"],
+      when: ["never"],
+      status: ["recur", "anta"]
+    }
+  },
+  {
+    name: "Mitsugu Yamaji",
+    img: "https://i.imgur.com/jAya3dy.png",
+    opts: {
+      series: ["3leaves"],
+      when: ["never"],
+      status: ["main"]
+    }
+  },
+  {
+    name: "Yuu Takezono",
+    img: "https://i.imgur.com/jAya3dy.png",
+    opts: {
+      series: ["3leaves"],
+      when: ["never"],
+      status: ["recur", "anta"]
+    }
+  },
+  {
+    name: "Sakura Usuda",
+    img: "https://i.imgur.com/jAya3dy.png",
+    opts: {
+      series: ["3leaves"],
+      when: ["never"],
+      status: ["recur"]
+    }
+  },
+  {
+    name: "Asako Kondou",
+    img: "https://i.imgur.com/jAya3dy.png",
+    opts: {
+      series: ["3leaves"],
+      when: ["never"],
+      status: ["side"]
+    }
+  }
+
+
   // END
 ];
