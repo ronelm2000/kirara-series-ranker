@@ -663,7 +663,7 @@ function clearProgress() {
   localStorage.removeItem(`${sorterURL}_saveData`);
   localStorage.removeItem(`${sorterURL}_saveType`);
 
-  document.querySelectorAll('.starting.start.button').forEach(el => el.style['grid-row'] = 'span 6');
+  document.querySelectorAll('.starting.start.button').forEach(el => el.style['grid-row'] = 'span 4');
   document.querySelectorAll('.starting.load.button').forEach(el => el.style.display = 'none');
 }
 

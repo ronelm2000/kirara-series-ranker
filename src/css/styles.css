@@ -95,11 +95,11 @@ body {
 }
 
 .starting.start.button {
-  grid-row: span 1 / 4;
+  grid-row: span 4 / auto;
 }
 
 .starting.load.button {
-  grid-row: span 4 / auto;
+  grid-row: span 2 / auto;
   display: none;
 }
 
