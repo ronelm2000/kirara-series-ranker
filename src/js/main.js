@@ -732,7 +732,14 @@ function populateOptions() {
     return `<div><label title="${tooltip?tooltip:name}"><input id="cb-${id}" type="checkbox" ${checked?'checked':''} ${disabled?'disabled':''}> ${name} (${characterData.filter(x => (subkey?x.opts[key]?x.opts[key]:[]:[]).includes(subkey) || (subkey == null && x.opts.hasOwnProperty(key))).length})</label></div>`;
   };
   const optInsertLarge = (name, id, tooltip, checked = true) => {
-    return `<div class="large option"><label title="${tooltip?tooltip:name}"><input id="cbgroup-${id}" type="checkbox" ${checked?'checked':''}> ${name}</label></div>`;
+    return `<div class="large option">
+              <label title="${tooltip?tooltip:name}">
+                <input id="cbgroup-${id}" type="checkbox" ${checked?'checked':''}> ${name}
+              </label>
+              <label title="${tooltip?tooltip:name}">
+                <input id="cbgroup-${id}-toggleoff" type="checkbox" ${checked?'checked':''} style="visibility: hidden;"> Quick Toggle
+              </label>
+            </div>`;
   };
 
   /** Clear out any previous options. */
@@ -754,6 +761,19 @@ function populateOptions() {
           document.getElementById(`cb-${opt.key}-${subindex}`).disabled = !groupbox.checked;
           if (groupbox.checked) { document.getElementById(`cb-${opt.key}-${subindex}`).checked = true; }
         });
+      });
+
+      // Insert Toggle Off Behavior
+      const groupboxtoggle = document.getElementById(`cbgroup-${opt.key}-toggleoff`);
+
+      groupboxtoggle.parentElement.addEventListener('click', () => {
+        if (groupbox.checked) {
+          opt.sub.forEach((subopt, subindex) => {
+            document.getElementById(`cb-${opt.key}-${subindex}`).checked = groupboxtoggle.checked; 
+          });
+        } else {
+          groupboxtoggle.checked = !groupboxtoggle.checked;
+        }
       });
     } else {
       optList.insertAdjacentHTML('beforeend', optInsert(opt.name, opt.key, opt.key, opt.tooltip, opt.checked));
