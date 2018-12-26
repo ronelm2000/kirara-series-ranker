@@ -1696,33 +1696,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Hajime Tsuji",
-    img: "https://i.imgur.com/jAya3dy.png",
-    opts: {
-      series: ["3leaves"],
-      when: ["never"],
-      status: ["recur", "anta"]
-    }
-  },
-  {
-    name: "Mitsugu Yamaji",
-    img: "https://i.imgur.com/jAya3dy.png",
-    opts: {
-      series: ["3leaves"],
-      when: ["never"],
-      status: ["main"]
-    }
-  },
-  {
-    name: "Yuu Takezono",
-    img: "https://i.imgur.com/jAya3dy.png",
-    opts: {
-      series: ["3leaves"],
-      when: ["never"],
-      status: ["recur", "anta"]
-    }
-  },
-  {
     name: "Sakura Usuda",
     img: "https://i.imgur.com/FDRkBzp.png",
     opts: {
