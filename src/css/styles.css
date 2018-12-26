@@ -268,7 +268,7 @@ label:hover {
   justify-content: space-around;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 1028px) {
   .sorter {
     margin-top: 1em;
     grid-template-columns: repeat(8, 9vw);
@@ -294,9 +294,7 @@ label:hover {
     flex-flow: row wrap;
     flex: 1 1 33%;
   }
-}
-
-@media all and (max-width: 484px) {
+  
   .button {
     font-size: 0.925em;
   }
