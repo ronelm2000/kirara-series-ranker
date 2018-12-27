@@ -77,8 +77,8 @@ body {
 .sorter {
   /*margin: 0px auto; */
   display: grid;
-  grid-template-columns: repeat(8, 9vw);
-  grid-template-rows: repeat(4, 9vw) 0.5vw 2vw;
+  grid-template-columns: repeat(8, 12vw);
+  grid-template-rows: repeat(4, 12vw) 0.5vw 1.3em;
   /*
   grid-template-columns: 120px 1fr 120px;
   */
@@ -95,16 +95,16 @@ body {
 }
 
 .starting.start.button {
-  grid-row: span 6;
+  grid-row: span 4 / auto;
 }
 
 .starting.load.button {
-  grid-row: span 3;
+  grid-row: span 2 / auto;
   display: none;
 }
 
 .sorting.button, .finished.button {
-  grid-row: span 2;
+  grid-row: span 1;
   display: none;
 }
 
@@ -152,7 +152,7 @@ body {
 
 .sorter > .padded-image {
   width: 100%;
-  max-width: 350px;
+  /* max-width: 350px; */
   overflow: hidden;
   grid-row: 1 / 5;
 
@@ -170,7 +170,7 @@ body {
 
 .sorter > .padded-image > .image {
   width: 100%;
-  max-width: 350px;
+  max-width: inherit; /*Previously max-width: 350px;*/
   margin: auto;
   object-fit: contain; /* Do not scale the image was contain */
   object-position: center; /* Center the image within the element */
@@ -180,7 +180,7 @@ body {
 
 .sorter > .text {
   width: 100%;
-  max-width: 350px;
+  /* max-width: 350px; */
   margin-left: auto;
   margin-right: auto;
   /*max-width: 240px;*/
@@ -189,6 +189,7 @@ body {
   height: 60px;
   */
   display: none;
+  grid-row: 6;
 }
 
 .sorter > .text > p {
@@ -209,7 +210,7 @@ body {
 }
 
 .sorter > .save {
-  grid-row: span 1;
+  grid-row: span 2;
 }
 
 .options {
@@ -267,6 +268,18 @@ label:hover {
   justify-content: space-around;
 }
 
+@media all and (min-width: 1028px) {
+  .sorter {
+    margin-top: 1em;
+    grid-template-columns: repeat(8, 9vw);
+    grid-template-rows: repeat(4, 9vw) 0.5vw 1.3em;
+  }
+
+  .options > div {
+    font-size:  0.625em;
+  }
+}
+
 @media all and (min-width: 600px) {
   .results {
     flex-flow: row wrap;
@@ -280,6 +293,10 @@ label:hover {
   .results {
     flex-flow: row wrap;
     flex: 1 1 33%;
+  }
+  
+  .button {
+    font-size: 0.925em;
   }
 }
 
