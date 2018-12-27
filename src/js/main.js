@@ -61,7 +61,13 @@ let tipCloseButton  = null;
 
 let agonyTooltip    = "If this is enabled, you are a true masochist."; 
 
-/** Cached Image Data using dexie.js */
+/** @type {SorterDatabase} 
+ * This database stores all Local cache information. The purpose of this database is to improve lookup times by storing
+ * the relevant data into the database which is stored locally by the browser at its discretion.
+ * 
+ * If ever there is a newer version, the old hash should be deleted within local db for a new version, and that
+ * file should be fetched.
+*/
 let db              = new Dexie("sorter-db");
 
 
@@ -96,6 +102,7 @@ function init() {
   document.querySelector('.finished.list.button').addEventListener('click', generateTextList);
 
   document.querySelector('.clearsave').addEventListener('click', clearProgress);
+  //document.querySelector('.clearcache').addEventListener('click', clearCacheDB);
 
   /** Define Tips */
   tipContent     = document.querySelector('.tip-content');
@@ -675,6 +682,17 @@ function clearProgress() {
   document.querySelectorAll('.starting.load.button').forEach(el => el.style.display = 'none');
 }
 
+/**
+ * Clear the cached image data from local browser Indexed DB.
+ */
+function clearCacheDB() {
+  db.transaction('rw', db.cache, () => {
+    db.cache.delete();
+    console.log('Deleted all the cached data.');
+    alert('All cached data has been deleted!');
+  });
+}
+
 function generateImage() {
   const timeFinished = timestamp + timeTaken;
   const tzoffset = (new Date()).getTimezoneOffset() * 60000;
@@ -896,8 +914,12 @@ function preloadImages() {
     }, timeoutMS)
   });
 
+  /**
+   * @param {String} src 
+   * @param {number} idx 
+   */
   const loadImage = (src, idx) => {
-      let actualPromise = new Promise((resolve, reject) => {
+      let actualPromise = () => new Promise((resolve, reject) => {
           const img = new Image();
 
           img.crossOrigin = 'Anonymous';
@@ -911,21 +933,50 @@ function preloadImages() {
           }
           img.src = src;
       });
-      return Promise.race([actualPromise, timeoutPromise]);
+
+      const loadImageFromDB = (/** @type {CacheEntry} */cacheEntry) => {
+        return new Promise((resolve, reject) => {
+          if (cacheEntry === undefined) return reject();
+          const img = new Image();
+          img.crossOrigin = 'Anonymous';
+          img.src = cacheEntry.source;
+          characterDataToSort[idx].img = cacheEntry.source;
+          console.log(`Preloaded from Local DB:`, characterDataToSort[idx].name);
+          progressBar(`Loading Image ${++imagesLoaded}`, Math.floor(imagesLoaded * 100 / totalLength));
+          resolve(img);
+        });
+      };
+      
+      return db.cache.where({
+        name: characterDataToSort[idx].name,
+        hash: hash(src)
+      }).first()
+        .then(loadImageFromDB)
+        .catch( (error) => {
+          if(error !== undefined) console.log(error);
+          return Promise.race([actualPromise(), timeoutPromise]);
+        });
   };
 
-  const setImageToData = (img, idx) => {
+  const setImageToData = (/** @type {HTMLImageElement} */img, idx) => {
     const canvas = document.createElement('canvas');
     canvas.width = img.naturalWidth;
     canvas.height = img.naturalHeight;
     canvas.getContext('2d').drawImage(img, 0, 0);
-    characterDataToSort[idx].img = canvas.toDataURL();
+    let imgData = canvas.toDataURL();
+    db.cache.put({
+      name: characterDataToSort[idx].name,
+      hash: hash(img.src),
+      source: imgData
+    });
+    characterDataToSort[idx].img = imgData;
     progressBar(`Loading Image ${++imagesLoaded}`, Math.floor(imagesLoaded * 100 / totalLength));
   };
 
-  const promises = characterDataToSort.map((char, idx) => loadImage(imageRoot + char.img, idx));
+  const promises = characterDataToSort.map(( /** @typedef {CharData} */char, idx) => loadImage(imageRoot + char.img, idx));
   return Promise.all(promises).catch((err) => {
-    log(err);
+    console.log(err);
+    throw err;
   });
 }
 
@@ -977,6 +1028,25 @@ function reduceTextWidth(text, font, width) {
     }
     return reducedText + '..';
   }
+}
+
+/**
+ * 
+ * @param {string} str 
+ * @returns {number}
+ */
+function hash(str) {
+  if (Array.prototype.reduce){
+      return str.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
+  } 
+  var hash = 0;
+  if (str.length === 0) return hash;
+  for (var i = 0; i < str.length; i++) {
+      var character  = str.charCodeAt(i);
+      hash  = ((hash<<5)-hash)+character;
+      hash = hash & hash; // Convert to 32bit integer
+  }
+  return hash;
 }
 
 window.onload = init;
