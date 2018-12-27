@@ -61,6 +61,9 @@ let tipCloseButton  = null;
 
 let agonyTooltip    = "If this is enabled, you are a true masochist."; 
 
+/** Cached Image Data using dexie.js */
+let db              = new Dexie("sorter-db");
+
 
 function isLocalStorageSupported() {
   try {
@@ -129,6 +132,11 @@ function init() {
         default: break;
       }
     }
+  });
+
+  /** Define Local DB */
+  db.version(1).stores({
+    cache: '++id, name, hash'
   });
 
   document.querySelector('.image.selector').insertAdjacentElement('beforeend', document.createElement('select'));
@@ -944,7 +952,8 @@ function msToReadableTime (milliseconds) {
 	if (days) content.push(days + " day" + (days > 1 ? "s" : ""));
 	if (hours) content.push(hours + " hour"  + (hours > 1 ? "s" : ""));
 	if (minutes) content.push(minutes + " minute" + (minutes > 1 ? "s" : ""));
-	if (t) content.push(t + " second" + (t > 1 ? "s" : ""));
+  if (t) content.push(t + " second" + (t > 1 ? "s" : ""));
+  if (!t) content.push(milliseconds + " millisecond" + (milliseconds > 1 ? "s" : ""));
   return content.slice(0,3).join(', ');
 }
 
