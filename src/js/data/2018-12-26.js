@@ -1000,7 +1000,7 @@ dataSet[dataSetVersion].characterData = [
     },
     {
       name: "Nadeshiko Kagamihara",
-      img: "https://i.imgur.com/2hZl9mo.jpg", //TODO: Change it from Swimsuit ver. to Normal
+      img: "https://i.imgur.com/28EBbDO.png", //TODO: Change it from Swimsuit ver. to Normal
       opts: {
         series: ["yc"],
         when: ["in"],
