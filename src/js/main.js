@@ -1,3 +1,4 @@
+/* eslint-disable semi */
 /** @type {CharData} */
 let characterData       = [];   // Initial character data set used.
 /** @type {CharData} */
@@ -70,6 +71,7 @@ let agonyTooltip    = "If this is enabled, you are a true masochist.";
 */
 let db              = new Dexie("sorter-db");
 
+/* eslint-enable semi */
 
 function isLocalStorageSupported() {
   try {

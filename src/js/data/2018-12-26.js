@@ -3,9 +3,11 @@
     series, status, sub, tooltip, trap, when
 */
 /* global
-    dataSet
+    dataSet,
+    dataSetVersion
 */
-let dataSetVersion = "2018-12-26" // Change this when creating a new data set version. YYYY-MM-DD format.
+/* eslint-disable no-global-assign */
+dataSetVersion = "2018-12-26" // Change this when creating a new data set version. YYYY-MM-DD format.
 dataSet[dataSetVersion] = {}
 dataSet[dataSetVersion].options = [
   {
