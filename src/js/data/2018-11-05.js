@@ -1,4 +1,7 @@
-npdataSetVersion = "2018-06-19"; // Change this when creating a new data set version. YYYY-MM-DD format.
+/* global dataSet */
+/* eslint-env es6 */
+/* eslint-disable */
+let dataSetVersion = "2018-11-05"; // Change this when creating a new data set version. YYYY-MM-DD format.
 dataSet[dataSetVersion] = {};
 
 dataSet[dataSetVersion].options = [

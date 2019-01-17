@@ -1,5 +1,7 @@
-dataSetVersion = "2018-06-19"; // Change this when creating a new data set version. YYYY-MM-DD format.
-dataSet[dataSetVersion] = {};
+/* global dataSet */
+/* eslint-env es6 */
+let dataSetVersion = "2018-06-19" // Change this when creating a new data set version. YYYY-MM-DD format.
+dataSet[dataSetVersion] = {}
 
 dataSet[dataSetVersion].options = [
   {
@@ -8,7 +10,7 @@ dataSet[dataSetVersion].options = [
     tooltip: "Check this to restrict to certain series.",
     checked: true,
     sub: [
-      { name: "Original", tooltip: "feat. salt", key: "kirara", checked: false},
+      { name: "Original", tooltip: "feat. salt", key: "kirara", checked: false },
       { name: "Hidamari Sketch", tooltip: "aka nutbladder grills", key: "wide" },
       { name: "Gakkou Gurashi", tooltip: "spoiler: there is (no) hope", key: "gg" },
       { name: "A Channel", tooltip: "suki tooru~~", key: "achan" },
@@ -26,10 +28,10 @@ dataSet[dataSetVersion].options = [
       { name: "Ha na ya ma ta", tooltip: "paato paato the dramafes", key: "hana" },
       { name: "Comic Girls", tooltip: "abababa", key: "comiga" },
       { name: "Anne Happy", tooltip: "the kirara that describes you", key: "anhapi" },
-      { name: "Haruka na Recieve", tooltip: "haikyu, but fappable and always beach episode", key: "haruka", checked: false},
-      { name: "K-ON!", tooltip: "KyoAni cashcow about cute girls not trying to do band things", key: "htt"},
-      { name: "Koufuku Grafitti", tooltip: "Souma's grandma", key: "foodgasm"},
-      { name: "Acchi Kocchi", tooltip: "This animu gave me diabetes", key: "acchi"},
+      { name: "Haruka na Recieve", tooltip: "haikyu, but fappable and always beach episode", key: "haruka", checked: false },
+      { name: "K-ON!", tooltip: "KyoAni cashcow about cute girls not trying to do band things", key: "htt" },
+      { name: "Koufuku Grafitti", tooltip: "Souma's grandma", key: "foodgasm" },
+      { name: "Acchi Kocchi", tooltip: "This animu gave me diabetes", key: "acchi" },
       { name: "Gochuumon Usagi desu ka?", tooltip: "civil war: cawfee VS gween tea", key: "rabbits" },
       { name: "Wakaba＊Girl", tooltip: "ping pong grils", key: "wakaba" }
     ]
@@ -40,9 +42,9 @@ dataSet[dataSetVersion].options = [
     tooltip: "Check this to restrict to characters that appear in the game.",
     checked: false,
     sub: [
-        { name: "In-Game", key: "in" },
-        { name: "Soon.tm", tooltip: "aka datamined", key: "soon" },
-        { name: "Never.tm", key: "never" }
+      { name: "In-Game", key: "in" },
+      { name: "Soon.tm", tooltip: "aka datamined", key: "soon" },
+      { name: "Never.tm", key: "never" }
     ]
   },
   {
@@ -51,11 +53,34 @@ dataSet[dataSetVersion].options = [
     tooltip: "Okay, seriously, I have an actual standard for this.",
     checked: true,
     sub: [
-        { name: "Main Cast", key: "main", tooltip: "By definition, she appears in at least 33% of all chapters after his/her debut."},
-        { name: "Game Cast", key: "game", tooltip: "She\'d normally be less than a recurring character, but if she's in the game, she has to be either a fan favorite or an important character!"},
-        { name: "Rival", key: "anta", tooltip: "She appears in at least one major arc as a foil / rival / enemy."},
-        { name: "Recurring", key: "recur", tooltip: "She appears in at least 10% of all chapters after his/her debut."},
-        { name: "Non-Recurring", key: "side", tooltip: "She only appears in one arc after debut, and for the rest of the manga / anime, she is absent. Also, all characters that do not fit the criteria for recurring also fit here.", checked: false}
+      {
+        name: "Main Cast",
+        key: "main",
+        tooltip: "By definition, she appears in at least 33% of all chapters after his/her debut."
+      },
+      {
+        name: "Game Cast",
+        key: "game",
+        tooltip: "She'd normally be less than a recurring character, " +
+                 "but if she's in the game, she has to be either a fan favorite or an important character!"
+      },
+      {
+        name: "Rival",
+        key: "anta",
+        tooltip: "She appears in at least one major arc as a foil / rival / enemy."
+      },
+      {
+        name: "Recurring",
+        key: "recur",
+        tooltip: "She appears in at least 10% of all chapters after his/her debut."
+      },
+      {
+        name: "Non-Recurring",
+        key: "side",
+        tooltip: "She only appears in one arc after debut, and for the rest of the manga / anime," +
+                 " she is absent. Also, all characters that do not fit the criteria for recurring also fit here.",
+        checked: false
+      }
     ]
   },
   {
@@ -1363,8 +1388,7 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["htt"],
       when: ["soon"],
-      status: ["main"],
-    
+      status: ["main"]
     }
   },
   {
