@@ -632,7 +632,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["snm"],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["sr", "ssr"]
     }
   },
   {
@@ -641,7 +642,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["snm"],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["sr", "ssr"]
     }
   },
   {
@@ -650,7 +652,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["snm"],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["sr", "valentines"]
     }
   },
   {
@@ -659,7 +662,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["snm"],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["sr"]
     }
   },
   {
@@ -668,7 +672,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["snm"],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["sr"]
     }
   },
   {
@@ -677,7 +682,18 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["snm"],
       when: ["in"],
-      status: ["recur"]
+      status: ["recur"],
+      rarity: ["sr"]
+    }
+  },
+  {
+    name: "Minaha Iino",
+    img: "https://i.imgur.com/WGNXM9V.jpg",
+    opts: {
+      series: ["snm"],
+      when: ["in"],
+      status: ["main", "recur"],
+      rarity: ["sr"]
     }
   },
   //
