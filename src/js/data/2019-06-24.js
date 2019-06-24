@@ -198,7 +198,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Yui Ichii",
-    img: "https://i.imgur.com/cgAG4bf.jpg",
+    img: "https://i.imgur.com/2sKr5MG.png",
     opts: {
       series: ["yys"],
       when: ["in"],
