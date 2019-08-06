@@ -1,15 +1,35 @@
 # charasort
-A web based character sorter. Allows users to run through a manual merge sort of their favorite
-characters from a set.
+A web based character sorter. Allows users to run through a manual merge sort of their favorite characters from a set.
 
 **Features**
  * Entirely client side, no backend server required.
  * Filtering out characters based on JSON based filters.
  * Shareable links of sorter results.
  * Versioning of sorter data - you may want to add characters and resources over time. Versioning keeps shareable links valid even if the base character data is changed.
+ * Saves a local copy of the images on your local browser so that it remembers it downloaded a file in advance, this is to save download times as a large amount of characters can take a lot of time to download.
  
-The version in this repo is built for characters from the [Touhou Project](https://en.wikipedia.org/wiki/Touhou_Project)
-game series, but the sorter can be easily edited to create any custom sorter desired.
+The version in this repo is built for characters from [Manga Time Kirara](https://en.wikipedia.org/wiki/Manga_Time_Kirara), but the sorter can be easily edited to create any custom sorter desired. There are over a lot of characters, around 180, and quickly rising! 
+
+As as you can see, this repo itself is a fork of the original sorter which uses characters from Touhou, but this repo contains several improvements, which may have already made it a bit backwards incompatible with the original repo. ![:KarenShrug:](https://media.discordapp.net/attachments/372514503134281729/604938456757698572/image0.png?width=25&height=25)
+
+**Series TODO List**
+ * K-ON! Shuffle
+ * Doujin Work
+ * Kanamemo
+ * Harumination
+ * Koisuru Asteroid
+ * Watashi wo Kyuujou ni Tsuretette!
+ * Ochikobore Fruit Tart
+ * Swap⇔Swap
+ * Machikado Mazoku (Possibly missing characters)
+ * Kirara Fantasia (There's always missing antagonists / characters / event-only charas)
+ * Madoka Series (Oh boy...)
+   * Tomoe Mami no Heibonna Nichijou
+   * Puella Magi Kazumi Magica
+   * Puella Magi Suzune Magica
+   * Puella Magi Oriko Magica
+   * Puella Magi Tart Magica: The Legend of "Jeanne d'Arc"
+   * Puella Magi Madoka Magica (and Wraith Arc)
 
 ## Related Sorters
 Several others have created other sorters based on other concepts and series, see them [here](https://github.com/execfera/charasort/wiki)!
@@ -158,6 +178,7 @@ The script will automatically get the latest version, but will retain the previo
  * [lz-string](https://github.com/pieroxy/lz-string) for shareable link compression.
  * [SpinKit](http://tobiasahlin.com/spinkit/) for loading animation.
  * [thsort](http://mainyan.sakura.ne.jp/thsort.html) for the original inspiration.
+ * [dexie](https://dexie.org/) as an IndexedDB wrapped (used to store local copies of images in your browser).
 
 ## Known Issues
 
