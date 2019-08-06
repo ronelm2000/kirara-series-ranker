@@ -8,7 +8,7 @@ A web based character sorter. Allows users to run through a manual merge sort of
  * Versioning of sorter data - you may want to add characters and resources over time. Versioning keeps shareable links valid even if the base character data is changed.
  * Saves a local copy of the images on your local browser so that it remembers it downloaded a file in advance, this is to save download times as a large amount of characters can take a lot of time to download.
  
-The version in this repo is built for characters from [Manga Time Kirara](https://en.wikipedia.org/wiki/Manga_Time_Kirara), but the sorter can be easily edited to create any custom sorter desired. There are over a lot of characters, around 180, and quickly rising! 
+The version in this repo is built for characters from [Manga Time Kirara](https://en.wikipedia.org/wiki/Manga_Time_Kirara) and [Kirara Fantasia](https://kirarafantasia.com/), but the sorter can be easily edited to create any custom sorter desired. There are over a lot of characters, around 180, and quickly rising! 
 
 As as you can see, this repo itself is a fork of the original sorter which uses characters from Touhou, but this repo contains several improvements, which may have already made it a bit backwards incompatible with the original repo. ![:KarenShrug:](https://media.discordapp.net/attachments/372514503134281729/604938456757698572/image0.png?width=25&height=25)
 
@@ -179,6 +179,7 @@ The script will automatically get the latest version, but will retain the previo
  * [SpinKit](http://tobiasahlin.com/spinkit/) for loading animation.
  * [thsort](http://mainyan.sakura.ne.jp/thsort.html) for the original inspiration.
  * [dexie](https://dexie.org/) as an IndexedDB wrapped (used to store local copies of images in your browser).
+ * Ayaya for [Kirara Fantasia Wiki](https://wiki.kirafan.moe/), which is the source for all game images.
 
 ## Known Issues
 
