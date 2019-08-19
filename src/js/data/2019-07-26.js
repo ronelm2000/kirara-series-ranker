@@ -428,11 +428,12 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Nene Sakura",
-    img: "https://i.imgur.com/rQPuFYZ.jpg",
+    img: "https://i.imgur.com/DGpYQlh.png",
     opts: {
       series: ["ng"],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["swimsuit2019"]
     }
   },
   {
@@ -1154,16 +1155,18 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["hana"],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["ssr"]
     }
   },
   {
     name: "Hana N. Fountainstand",
-    img: "https://i.imgur.com/2RBo55C.jpg",
+    img: "https://i.imgur.com/fVpa7mX.png",
     opts: {
       series: ["hana"],
       when: ["in"],
-      status: ["main"]
+      status: ["main"],
+      rarity: ["swimsuit2019"]
     }
   },
   {
@@ -1787,7 +1790,7 @@ dataSet[dataSetVersion].characterData = [
   {
     name: "Yuuko Yoshida",
     img: "https://i.imgur.com/C7po5fL.png",
-    tooltip: "Shamiko", 
+    tooltip: "Shamiko",
     opts: {
       series: ["machi"],
       when: ["soon"],
