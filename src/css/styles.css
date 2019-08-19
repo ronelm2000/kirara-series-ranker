@@ -40,7 +40,7 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   /*margin-top: 1em; */
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 182, 193, 255), rgba(255, 255, 255, 0));
+  background: linear-gradient(rgba(255, 255, 255, 0), rgb(163, 185, 255), rgba(255, 255, 255, 0));
 }
 
 .progress {
