@@ -50,12 +50,12 @@ dataSet[dataSetVersion].options = [
       {
         name: "Manga Time Kirara Carat",
         key: "carat",
-        tooltip: "The home of 4komas!"
+        tooltip: "The home of moe-personified 4komas."
       },
       {
         name: "Manga Time Kirara Forward",
         key: "forward",
-        tooltip: "The edgy one! ...Sometimes!"
+        tooltip: "The one that isn't 4koma."
       },
       {
         name: "Manga Time Kirara MAX",
@@ -87,10 +87,10 @@ dataSet[dataSetVersion].options = [
     tooltip: "Check this to include ONLY series confirmed to be in Kirara Fantasia, the official cross-over mobage for all things Kirara."
   },
   {
-    name: "4koma Only",
-    key: "non4koma",
-    checked: false,
-    tooltip: "Check this to restrict your choices to those in the yonkoma format."
+    name: "Disable Sequels / Prequels",
+    key: "sequel",
+    checked: true,
+    tooltip: "Check this to disable all direct sequels or prequels. For example: K-ON! College / High School will be filtered out."
   }
 ]
 
@@ -99,15 +99,78 @@ dataSet[dataSetVersion].characterData = [
   // Image Resolution needs to be something like 800 x 1138
   //
   {
-    name: "Hidamari Sketch",
-    tooltip: "Sunshine Sketch (Yen Press)",
-    img: "https://i.imgur.com/aLwQ51S.jpg",
+    name: "K-ON!",
+    img: "https://i.imgur.com/V1fyv4V.jpg",
     opts: {
-      published: [ "2000" ],
+      published: [ "2005" ],
       adapted: [ "2005", "2010" ],
-      magazine: [ "carat" ],
+      magazine: [ "og" ],
       nonkirafan: false,
       non4koma: false
+    }
+  }
+  ,{
+    name: "K-ON! College",
+    img: "https://i.imgur.com/GfdMKGU.jpg",
+    opts: {
+      published: [ "2010" ],
+      adapted: [ "never" ],
+      magazine: [ "og" ],
+      nonkirafan: true,
+      sequel: true
+    }
+  }
+  ,{
+    name: "K-ON! High School",
+    img: "https://i.imgur.com/QlALJlY.jpg",
+    opts: {
+      published: [ "2010" ],
+      adapted: [ "never" ],
+      magazine: [ "carat" ], // Why tho
+      nonkirafan: true,
+      sequel: true
+    }
+  }
+  ,{
+    name: "K-ON! Shuffle",
+    img: "https://i.imgur.com/1pMOaTa.png?1", //TODO: Add volume 1 cover when it comes out.
+    opts: {
+      published: [ "2015" ],
+      adapted: [ "never" ],
+      magazine: [ "og" ],
+      nonkirafan: true,
+      sequel: false // It's a spin-off
+    }
+  }
+  ,{
+    name: "Acchi Kocchi",
+    tooltip: "Place to Place",
+    img: "https://i.imgur.com/2feajj5.jpg",
+    opts: {
+      published: [ "2005" ],
+      adapted: [ "2010" ],
+      magazine: [ "og" ],
+      nonkirafan: false
+    }
+  }
+  ,{
+    name: "Doujin Work",
+    img: "https://i.imgur.com/42kxCQW.jpg",
+    opts: {
+      published: [ "2000" ],
+      adapted: [ "2005" ],
+      magazine: [ "og" ],
+      nonkirafan: false
+    }
+  }
+  ,{
+    name: "Yuyushiki",
+    img: "https://i.imgur.com/QpmiPHc.jpg",
+    opts: {
+      published: [ "2005" ],
+      adapted: [ "2010", "2015" ],
+      magazine: [ "og" ],
+      nonkirafan: false
     }
   }
   ,{
@@ -117,10 +180,47 @@ dataSet[dataSetVersion].characterData = [
       published: [ "2010" ],
       adapted: [ "2015" ],
       magazine: [ "og" ],
-      nonkirafan: false,
-      non4koma: false
+      nonkirafan: false
     }
   }
+  //
+  // Manga Time Kirara Carat
+  //
+  ,{
+    name: "Hidamari Sketch",
+    tooltip: "Sunshine Sketch (Yen Press)",
+    img: "https://i.imgur.com/aLwQ51S.jpg",
+    opts: {
+      published: [ "2000" ],
+      adapted: [ "2005", "2010" ],
+      magazine: [ "carat" ],
+      nonkirafan: false
+    }
+  }
+  ,{
+    name: "New Game!",
+    img: "https://i.imgur.com/i5DiiKl.jpg",
+    opts: {
+      published: [ "2010" ],
+      adapted: [ "2015" ],
+      magazine: [ "carat" ],
+      nonkirafan: false
+    }
+  }
+  ,{
+    name: "A-Channel",
+    img: "https://i.imgur.com/k4v4XN4.jpg",
+    opts: {
+      published: [ "2005" ],
+      adapted: [ "2010" ],
+      magazine: [ "carat" ],
+      nonkirafan: false
+    }
+  }
+
+  //
+  // Manga Time Kirara Forward
+  //
   ,{
     name: "Anne Happy~♪",
     img: "https://i.imgur.com/jGRUNlq.png",
@@ -128,8 +228,7 @@ dataSet[dataSetVersion].characterData = [
       published: [ "2010" ],
       adapted: [ "2015" ],
       magazine: [ "forward" ],
-      nonkirafan: false,
-      non4koma: true
+      nonkirafan: false
     }
   }
   ,{
@@ -140,8 +239,7 @@ dataSet[dataSetVersion].characterData = [
       published: [ "2010" ],
       adapted: [ "2010", "2015", "2020" ],
       magazine: [ "max" ],
-      nonkirafan: false,
-      non4koma: false
+      nonkirafan: false
     }
   }
   ,{
@@ -151,10 +249,10 @@ dataSet[dataSetVersion].characterData = [
       published: [ "2010" ],
       adapted: [ "2010" ],
       magazine: [ "miracle" ],
-      nonkirafan: false,
-      non4koma: false
+      nonkirafan: false
     }
   }
+  
   //
   // END
   //
