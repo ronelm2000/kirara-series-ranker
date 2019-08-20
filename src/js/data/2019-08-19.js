@@ -28,7 +28,6 @@ dataSet[dataSetVersion].options = [
     tooltip: "Check this to restrict to year of anime adaptation (in 5-year cycles).",
     checked: false,
     sub: [
-      { name: "2003 - 2004", tooltip: "because we can", key: "2000" },
       { name: "2005 - 2009", tooltip: "when kirara became wider", key: "2005" },
       { name: "2010 - 2014", tooltip: "moe explosion years", key: "2010" },
       { name: "2015 - 2019", tooltip: "idolbait, moebait, all the bait + isekai", key: "2015" },
