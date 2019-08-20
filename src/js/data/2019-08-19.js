@@ -150,7 +150,7 @@ dataSet[dataSetVersion].characterData = [
       published: [ "2005" ],
       adapted: [ "2010" ],
       magazine: [ "og" ],
-      nonkirafan: false
+      nonkirafan: true
     }
   }
   ,{
@@ -160,7 +160,7 @@ dataSet[dataSetVersion].characterData = [
       published: [ "2000" ],
       adapted: [ "2005" ],
       magazine: [ "og" ],
-      nonkirafan: false
+      nonkirafan: true
     }
   }
   ,{
