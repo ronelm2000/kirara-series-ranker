@@ -1,9 +1,11 @@
 body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: calc(20px + (26 - 16) * ((100vw - 150px) / (1600 - 150))); /*3.125vmin;*//* 16px; */
+  /*
   text-size-adjust: none;
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
+  */
 }
 
 .tip-modal {
