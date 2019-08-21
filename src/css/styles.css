@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-size: calc(20px + (26 - 16) * ((100vw - 150px) / (1600 - 150))); /*3.125vmin;*//* 16px; */
+  font-size: calc(16px + (26 - 16) * ((100vw - 50px) / (1600 - 50))); /*3.125vmin;*//* 16px; */
   /*
   text-size-adjust: none;
   -moz-text-size-adjust: none;
@@ -98,25 +98,25 @@ body {
 
 .starting.start.button {
   grid-row: span 4 / auto;
-  font-size: calc(8px + (32 - 8) * ((100vw - 50px) / (1600 - 50)));
+  font-size: calc(3px + (32 - 3) * ((100vw - 50px) / (1600 - 10)));
 }
 
 .starting.load.button {
   grid-row: span 2 / auto;
   display: none;
-  font-size: calc(8px + (32 - 8) * ((100vw - 50px) / (1600 - 50)));
+  font-size: calc(3px + (32 - 3) * ((100vw - 50px) / (1600 - 10)));
 }
 
 .sorting.button, .finished.button {
   grid-row: span 1;
   display: none;
-  font-size: calc(8px + (32 - 8) * ((100vw - 50px) / (1600 - 50)));
+  font-size: calc(3px + (32 - 3) * ((100vw - 50px) / (1600 - 10)));
 }
 
 .loading.button {
   grid-row: span 4;
   display: none;
-  font-size: calc(8px + (32 - 8) * ((100vw - 50px) / (1600 - 300)));
+  font-size: calc(8px + (32px - 8px) * ((100vw - 50px) / (1600 - 50)));
 }
 
 .loading.button > div {
