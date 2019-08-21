@@ -47,14 +47,14 @@ body {
 
 .progress {
   margin: 1em auto;
-  width: 100%;
+  width: calc(100% - 10px);
   max-width: 500px;
   display: none;
 }
 
 .progressbar {
   position: relative;
-  width: 100%;
+  width: calc(100% - 10px);
   max-width: 492px;
   border: 1px solid black;
   padding: 3px;
