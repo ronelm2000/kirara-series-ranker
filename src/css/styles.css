@@ -98,7 +98,6 @@ body {
 
 .starting.start.button {
   grid-row: span 4 / auto;
-  font-size: calc(3px + (32 - 3) * (100vw - 25px) / (1600 - 25) );
 }
 
 .starting.load.button {
@@ -110,6 +109,14 @@ body {
 .sorting.button, .finished.button {
   grid-row: span 1;
   display: none;
+  font-size: calc(3px + (32 - 3) * (100vw - 25px) / (1600 - 25) );
+}
+
+.starting.button > p, .sorting.button > p {
+  font-size: calc(3px + (32 - 3) * (100vw - 25px) / (1600 - 25) );
+}
+
+.finished.button > p {
   font-size: calc(5px + (32 - 5) * (100vw - 25px) / (1600 - 25) );
 }
 
