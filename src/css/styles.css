@@ -318,8 +318,8 @@ label:hover {
 
 @media all and (max-width: 400px) {
   .button {
-    font-size: 8px;
-    font-size: calc(3px + (32 - 3) * (100vw - 100px) / (1600 - 100) );
+    font-size: 0.125rem;
+    font-size: calc( 1px + (100vw - 10px) * (32 - 1) / (1600 - 10) );
   }
 }
 
@@ -351,6 +351,7 @@ label:hover {
 
 .result.image img {
   width: inherit;
+  text-align: center;
 }
 
 .result.spacer {
