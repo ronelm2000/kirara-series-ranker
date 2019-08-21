@@ -98,25 +98,25 @@ body {
 
 .starting.start.button {
   grid-row: span 4 / auto;
-  font-size: calc(8px + (32 - 8) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(8px + (32 - 8) * ((100vw - 50px) / (1600 - 50)));
 }
 
 .starting.load.button {
   grid-row: span 2 / auto;
   display: none;
-  font-size: calc(8px + (32 - 8) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(8px + (32 - 8) * ((100vw - 50px) / (1600 - 50)));
 }
 
 .sorting.button, .finished.button {
   grid-row: span 1;
   display: none;
-  font-size: calc(8px + (32 - 8) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(8px + (32 - 8) * ((100vw - 50px) / (1600 - 50)));
 }
 
 .loading.button {
   grid-row: span 4;
   display: none;
-  font-size: calc(12px + (32 - 12) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(8px + (32 - 8) * ((100vw - 50px) / (1600 - 300)));
 }
 
 .loading.button > div {
