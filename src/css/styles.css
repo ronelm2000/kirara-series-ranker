@@ -308,11 +308,20 @@ label:hover {
     flex-flow: row wrap;
     flex: 1 1 33%;
   }
-  
+  /*
   .button {
     font-size: 0.925em;
   }
+  */
 }
+
+/*
+@media all and (max-width: 400px) {
+  .button {
+    font-size: 8px;
+  }
+}
+*/
 
 .result {
   display: grid;
