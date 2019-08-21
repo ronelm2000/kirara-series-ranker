@@ -208,7 +208,7 @@ body {
 .sorter > .text > p {
   width: 100%;
   text-align: center;
-  font-size: calc(5px + (24 - 5) * (100vw - 25px) / (1600 - 25) ); /*font-size: 0.925em;*/
+  font-size: calc(5px + (100vw - 25px) * (24 - 5) / (1600 - 25) ); /*font-size: 0.925em;*/
 /*  transform: translateY(12.5%); */
   transform: translateY(25%);
 }
@@ -315,13 +315,14 @@ label:hover {
   */
 }
 
-/*
+
 @media all and (max-width: 400px) {
   .button {
     font-size: 8px;
+    font-size: calc(3px + (32 - 3) * (100vw - 100px) / (1600 - 100) );
   }
 }
-*/
+
 
 .result {
   display: grid;
