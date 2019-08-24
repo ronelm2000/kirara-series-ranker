@@ -167,7 +167,7 @@ function init() {
 
   /** Show load button if save data exists. */
   if (storedSaveType) {
-    document.querySelector('.starting.load.button > span').insertAdjacentText('beforeend', storedSaveType);
+    document.querySelector('.starting.load.button > p > span').insertAdjacentText('beforeend', storedSaveType);
     document.querySelectorAll('.starting.button').forEach(el => {
       el.style['grid-row'] = 'span 2';
       el.style.display = 'block';

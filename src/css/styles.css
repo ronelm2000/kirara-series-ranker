@@ -1,9 +1,11 @@
 body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-size: 3.125vmin;/* font-size: 16px; */
+  font-size: calc(16px + (26 - 16) * ((100vw - 50px) / (1600 - 50))); /*3.125vmin;*//* 16px; */
+  /*
   text-size-adjust: none;
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
+  */
 }
 
 .tip-modal {
@@ -45,14 +47,14 @@ body {
 
 .progress {
   margin: 1em auto;
-  width: 100%;
+  width: calc(100% - 10px);
   max-width: 500px;
   display: none;
 }
 
 .progressbar {
   position: relative;
-  width: 100%;
+  width: calc(100% - 10px);
   max-width: 492px;
   border: 1px solid black;
   padding: 3px;
@@ -101,16 +103,27 @@ body {
 .starting.load.button {
   grid-row: span 2 / auto;
   display: none;
+  font-size: calc(3px + (32 - 3) * (100vw - 100px) / (1600 - 100) );
 }
 
 .sorting.button, .finished.button {
   grid-row: span 1;
   display: none;
+  font-size: calc(3px + (32 - 3) * (100vw - 25px) / (1600 - 25) );
+}
+
+.starting.button > p, .sorting.button > p {
+  font-size: calc(3px + (32 - 3) * (100vw - 25px) / (1600 - 25) );
+}
+
+.finished.button > p {
+  font-size: calc(5px + (32 - 5) * (100vw - 25px) / (1600 - 25) );
 }
 
 .loading.button {
   grid-row: span 4;
   display: none;
+  font-size: calc(5px + (32 - 5) * (100vw - 25px) / (1600 - 25) );
 }
 
 .loading.button > div {
@@ -195,8 +208,9 @@ body {
 .sorter > .text > p {
   width: 100%;
   text-align: center;
-  font-size: 0.925em;
-  transform: translateY(12.5%);
+  font-size: calc(5px + (100vw - 25px) * (24 - 5) / (1600 - 25) ); /*font-size: 0.925em;*/
+/*  transform: translateY(12.5%); */
+  transform: translateY(25%);
 }
 
 .sorter > .left {
@@ -294,11 +308,21 @@ label:hover {
     flex-flow: row wrap;
     flex: 1 1 33%;
   }
-  
+  /*
   .button {
     font-size: 0.925em;
   }
+  */
 }
+
+
+@media all and (max-width: 400px) {
+  .button {
+    font-size: 0.125rem;
+    font-size: calc( 1px + (100vw - 10px) * (32 - 1) / (1600 - 10) );
+  }
+}
+
 
 .result {
   display: grid;
@@ -327,6 +351,7 @@ label:hover {
 
 .result.image img {
   width: inherit;
+  text-align: center;
 }
 
 .result.spacer {
