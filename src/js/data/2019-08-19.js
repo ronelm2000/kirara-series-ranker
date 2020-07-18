@@ -245,13 +245,148 @@ dataSet[dataSetVersion].characterData = [
     name: "Sakura Trick",
     img: "https://i.imgur.com/oYrQIAc.jpg",
     opts: {
-      published: [ "2010" ],
-      adapted: [ "2010" ],
+      published: [ "2011" ],
+      adapted: [ "2014" ],
       magazine: [ "miracle" ],
       nonkirafan: false
     }
   }
-  
+  ,{
+    name: "Kill Me Baby",
+    tooltip: "Baby, please kill me."
+    img: "https://i.imgur.com/QNQs7aG.jpg",
+    opts: {
+      published: [ "2005" ],
+      adapted: [ "2010" ],
+      magazine: [ "carat" ],
+      nonkirafan: false
+    }
+  }
+  ,{
+    name:"Urara Meirochou"
+    img: "https://i.imgur.com/ghzXUCn.jpg"
+    opts: {
+      published: [ "2010" ],
+      adapted: [ "2015" ],
+      magazine: [ "og, miracle" ],
+      nonkirafan: false
+    }
+  }
+  ,{
+    name: "Kiniro Mosaic"
+    tooltip: "Kinmoza",
+    img: "https://i.imgur.com/gaEg5WH.jpg"
+    opts: {
+      published: [ "2010" ]
+      adapted: [ "2010", "2015"]
+      magazine: [ "max" ]
+      nonkirafan: false
+    }
+  }
+  ,{
+    name: "Anima Yell!"
+    img: "https://i.imgur.com/LUAtDeI.jpg"
+    opts: {
+      published: [ "2015" ]
+      adapted: [ "2015" ]
+      magazine: [ "carat" ]
+      nonkirafan: false
+    }
+  }
+  ,{
+    name: "Machikado Mazoku"
+    tooltip: "The Demon Girl Next Door"
+    img: "https://i.imgur.com/m3TJidP.jpg"
+    opts: {
+      published: [ "2010" ]
+      adapted: [ "2015"]
+      magazine: [ "carat"]
+      nonkirafan: false
+    }
+  }
+  ,{
+    name: "Comic Girls"
+    img: "https://i.imgur.com/0qg1i8H.jpg"
+    opts: {
+      published: [ "2010" ]
+      adapted: [ "2015"]
+      magazine: [ "max"]
+      nonkirafan: false
+    }
+  }
+  ,{
+    name: "Yuru Camp"
+    img: "https://i.imgur.com/Kq8JqI9.jpg"
+    tooltip: "Yurukyan/Laid Back Camp (Yen Press)"
+    opts: {
+      published: [ "2015" ]
+      adapted: [ "2015" ]
+      magazine: [ "foward, fuz" ]
+      nonkirafan: false
+    }
+  }
+  ,{
+    name: "Hanayamata"
+    img: "https://i.imgur.com/A2TnCC3.jpg"
+    opts: {
+      published: [ "2010" ]
+      adapted: [ "2010" ]
+      magazine: [ "forward" ]
+      nonkirafan: false
+    }
+  }
+  ,{
+    name: "Blend S"
+    img: "https://i.imgur.com/J5Hz8Wy.jpg"
+    opts: {
+      published: [ "2010" ]
+      adapted: [ "2015" ]
+      magazine: [ "carat" ]
+      nonkirafan: false
+    }
+  }
+  ,{
+    name: "Joukamachi No Dandelion"
+    tooltip: "Castle Town Dandelion"
+    img: "https://i.imgur.com/AoJRzhS.jpg"
+    opts: {
+      published: [ "2010" ]
+      adapted: [ "2015" ]
+      magazine: [ "miracle" ]
+      nonkirafan: true
+    }
+  }
+  ,{
+    name: "Sansha Sanyou"
+    img: "https://i.imgur.com/t523RIK.jpg"
+    opts: {
+      published: [ "2003"]
+      adapted: [ "2015" ]
+      magazine: [ "og" ]
+      nonkirafan: false
+    }
+  }
+  ,{
+    name: "Shoulder-A-Coffin Kuro"
+    tooltip: "Hitsugi Katsugi no Kuro"
+    img: "https://i.imgur.com/BtgL5XM.jpg"
+    opts: {
+      published: [ "2005" ]
+      adapted: [ "never" ]
+      magazine: [ "og" ]
+      nonkirafan: false
+    }
+  }
+  ,{
+    name: "GA: Geijutsuka Art Design Class"
+    img: "https://i.imgur.com/nnxfvts.jpg"
+    opts: {
+      published: [ "2005" ]
+      adapted: [ "2005" ]
+      magazine: [ "carat" ]
+      nonkirafan: false
+    }
+  }
   //
   // END
   //
